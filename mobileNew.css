@@ -1,0 +1,479 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Alike;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+}
+
+.headerpic {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#mainnav {
+	background-color: #83ded5;
+	width: 100%;
+	height: 16vw;
+	position: relative;
+	bottom: 5px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	box-shadow: 0 5px 8px -4px grey;
+}
+
+.selectednav {
+	display: none;
+}
+
+.selectedmobile {
+  background-color: #67bfb6;
+}
+
+.navbtn {
+	display: none;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#downarrow {
+	display: none;
+}
+
+#dropdowncontainer {
+	display: none;
+}
+
+.dropbtn {
+	display: none;
+}
+
+#placesup, #placesdown {
+	display: none;
+	visibility: hidden;
+}
+
+.instamobile {
+	height: 3vw;
+	width: 3vw;
+	background-color: #83ded5;
+	color: black;
+	font-size: 50%;
+	position: absolute;
+	margin-top: 6%;
+	left: 89%;
+}
+
+.tumblrmobile {
+	height: 3vw;
+	width: 3vw;
+	background-color: #83ded5;
+	color: black;
+	font-size: 50%;
+	position: absolute;
+	margin-top: 6%;
+	left: 94%;
+}
+
+.instabtn, .tumblrbtn {
+  display: none;
+}
+
+#mobiledropcontainer {
+  background-color: #83ded5;
+  width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+.selectedmobile {
+  width: 100%;
+  background-color: #67bfb6;
+  height: 20px;
+  color: black;
+  display: none;
+  font-weight: bold;
+  font-family: Alike;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.mobilenav {
+	height: 50%;
+	background-color: #83ded5;
+	width: 20%;
+	font-family: Alike;
+	font-size: 2.5vw;
+	margin: 0;
+	padding: 0;
+}
+
+.mobilebtn {
+  width: 100%;
+  background-color: #83ded5;
+  height: 30px;
+  color: black;
+  display: block;
+  font-family: Alike;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.mobiledrop {
+	animation-name: dropanim;
+	-webkit-animation-name: dropanim;
+	animation-duration: .4s;
+	-webkit-animation-duration: .4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes dropanim {
+	from {height:0}
+	to {height:210px}
+}
+
+@-webkit-keyframes dropanim {
+	from {height:0}
+	to {height:210px}
+}
+
+.mobileup {
+	animation-name: dropupanim;
+	-webkit-animation-name: dropupanim;
+	animation-duration: .5s;
+	-webkit-animation-duration: .5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes dropupanim {
+	from {height:210px}
+	to {height:0}
+}
+
+@-webkit-keyframes dropupanim {
+	from {height:210px}
+	to {height:0}
+}
+
+#placesupmobile {
+  display: none;
+}
+
+#mobileplacecontainer {
+  background-color: #83ded5;
+  width: 100%;
+	overflow: hidden;
+	height: 0;
+	position: absolute;
+	z-index: 50;
+}
+
+.mobiletitle {
+	height: 100%;
+	background-color: inherit;
+	font-family: Alike;
+	display: inline;
+	text-align: center;
+	width: 100%;
+	font-size: 3vw;
+	position: relative;
+	right: 3%;
+	margin: 0;
+	padding: 0;
+}
+
+.placedrop {
+	animation-name: mobileplaceanim;
+	-webkit-animation-name: mobileplaceanim;
+	animation-duration: .4s;
+	-webkit-animation-duration: .4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes mobileplaceanim {
+	from {height:0}
+	to {height:300px}
+}
+
+@-webkit-keyframes mobileplaceanim {
+	from {height:0}
+	to {height:300px}
+}
+
+.placedropup {
+	animation-name: mobileplaceup;
+	-webkit-animation-name: mobileplaceup;
+	animation-duration: .4s;
+	-webkit-animation-duration: .4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes mobileplaceup {
+	from {height:300px}
+	to {height:0}
+}
+
+@-webkit-keyframes mobileplaceup {
+	from {height:300px}
+	to {height:0}
+}
+
+.left3, .mid3, .right3 {
+	display: none;
+}
+
+#box2mobile, #box3mobile, #box4mobile {
+	display: none;
+}
+
+.left2 {
+	width: 47.75%;
+	display: inline;
+	float: left;
+	margin: 1.5% 1.5% 0 1.5%;
+	padding: 0;
+}
+
+.right2 {
+	width: 47.75%;
+	display: inline;
+	float: right;
+	margin: 1.5% 1.5% 0 0;
+	padding: 0;
+}
+
+.full {
+	display: none;
+	vertical-align: center;
+	position: fixed;
+}
+
+.mimg1, .mimg2, .mimg3, .mimg4 {
+	width: 100%;
+	margin: 2.5% 0 0 0;
+}
+
+.mimg2, .mimg3, .mimg4 {
+    display: none;
+}
+
+#shadow {
+	opacity: 0.7;
+	background-color: black;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.exitfullbtn {
+	border-radius: 50%;
+	width: 75px;
+	height: 57px;
+	font-size: 34px;
+	color: white;
+	display: inline-block;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	-webkit-text-stroke: 1.5px black;
+	text-align: center;
+	padding-top: 18px;
+	z-index: 20;
+}
+
+.nextpicbtn {
+	border-radius: 50%;
+	width: 90px;
+	height: 69px;
+	font-size: 40px;
+	color: white;
+	display: inline-block;
+	position: fixed;
+	right: 10px;
+	top: 35vh;
+	-webkit-text-stroke: 1.5px black;
+	text-align: center;
+	padding-top: 21px;
+	z-index: 20;
+}
+
+.lastpicbtn {
+	border-radius: 50%;
+	width: 90px;
+	height: 69px;
+	font-size: 40px;
+	color: white;
+	display: inline-block;
+	position: fixed;
+	left: 10px;
+	top: 35vh;
+	-webkit-text-stroke: 1.5px black;
+	text-align: center;
+	padding-top: 21px;
+	z-index: 20;
+}
+
+.fullpic {
+	max-width: 100%;
+	max-height: 100%;
+	z-index: 10;
+	position: relative;
+	margin: auto;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.fullpicarea {
+	z-index: 1;
+	width: 100%;
+	height: 80vh;
+	position: fixed;
+	text-align: center;
+	vertical-align: middle;
+	top: 0;
+}
+
+.picdesc {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	height: 20vh;
+	bottom: 0vh;
+	font-family: Alike;
+	z-index: 20;
+}
+
+.location {
+	height: 20vh;
+	font-size: 2.5vh;
+	padding-left: 30px;
+	padding-top: 7.5vh;
+	z-index: 3;
+}
+
+.locationname {
+	width: 100%;
+	text-align: center;
+	font-size: 4.5vw;
+	font-family: Alike;
+	text-decoration: underline;
+	padding-top: 12px;
+}
+
+#loadmoremobile2, #loadmoremobile3 {
+	display: none;
+}
+
+.loadmore {
+	display: none;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.loadmoremobile {
+	width: 20%;
+	margin: 100px 40% 80px 40%;
+	padding: 15px 0;
+	text-align: center;
+	font-family: Alike;
+	font-size: 2.2vw;
+	font-weight: 100;
+	border: 1px solid black;
+	background-color: white;
+	float: left;
+}
+
+.featline {
+	width: 90%;
+	margin: 6vw 0 0 5%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.sspics {
+  display: none;
+	position: absolute;
+  width: 60%;
+  margin: 6vw 0 50px 20%;
+  padding: 0;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+.collage {
+	display: none;
+}
+
+.mobileparagraph {
+	font-family: Algreya;
+	text-align: center;
+	width: 48%;
+	font-size: 100%;
+	margin: 1vw 0 0 25%;
+	border: 1px solid black;
+	padding: 2%;
+}
+
+.imlauren {
+	width: 100%;
+	text-align: center;
+	font-family: Arima Madurai;
+	font-size: 1.5vw;
+}
+
+#mainorder {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: left;
+	padding: 0;
+	font-size: 100%;
+	font-family: Algreya;
+	line-height: 22px;
+}
+
+.orderlist {
+	width: 100%;
+	padding-left: 5%;
+}
+
+.mobilefull {
+	border: 10px solid blue;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+}
