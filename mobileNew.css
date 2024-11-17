@@ -10,6 +10,15 @@ a {
 	text-decoration: none;
 }
 
+a:visitied {
+	color: black;
+	text-decoration: none;
+}
+
+.loadmobile a {
+	color: orange;
+}
+
 button {
 	border: 0;
 }
