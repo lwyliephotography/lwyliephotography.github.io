@@ -15,8 +15,9 @@ a:visited {
 	text-decoration: none;
 }
 
-.loadmobile a {
+.loadmoremobile a {
 	color: orange;
+	border: 1px solid pink;
 }
 
 button {
