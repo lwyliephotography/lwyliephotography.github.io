@@ -61,6 +61,7 @@ for(var i = 0; i < cancel.length; i++) {
   document.getElementById("shadow").style.display = "none";
 	document.body.style.overflow = "scroll";
   }
+  document.body.style.overflowX = 'hidden';
 }
 
 function loadMore(next) {
