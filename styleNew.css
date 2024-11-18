@@ -90,6 +90,7 @@ button {
 	font-size: 1.5vw;
 	margin: 0;
 	padding: 0;
+	color: black;
 }
 
 .navbtn:hover {
@@ -371,6 +372,7 @@ button {
 	border: 1px solid black;
 	background-color: white;
 	float: left;
+	color: black;
 }
 
 .loadmore:hover {
