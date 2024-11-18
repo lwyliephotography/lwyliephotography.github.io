@@ -23,7 +23,7 @@ button {
 	border: 0;
 }
 
-#hamburgerdown, #hamburgerup, .mobiletitle, .left2, .right2, .left4, .lmid4, .rmid4, .right4, .instamobile, .earringmobile, .mobilebtn, .mobilenav, .selectedmobile {
+.linkbtnctr, .socialbtnctr, #hamburgerdown, #hamburgerup, .mobiletitle, .left2, .right2, .left4, .lmid4, .rmid4, .right4, .instamobile, .earringmobile, .mobilebtn, .mobilenav, .selectedmobile {
 	display: none;
 	visibility: hidden;
 	height: 0;
