@@ -10,12 +10,8 @@ a, a:visited, a:link {
 	text-decoration: none;
 }
 
-#skybtn {
-	color: red;
-}
-
 .loadmoremobile a {
-	color: orange;
+	color: blue;
 	border: 1px solid black;
 }
 
@@ -128,6 +124,7 @@ button {
 	font-size: 2.5vw;
 	margin: 0;
 	padding: 0;
+	color: red;
 }
 
 .mobilebtn {
