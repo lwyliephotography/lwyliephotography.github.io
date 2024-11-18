@@ -1,0 +1,1125 @@
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
+<html>
+	<head> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143601127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143601127-1');
+</script>
+
+	<script type="text/javascript" src="./scriptNew.js" async="true"></script>
+		<title>Sky | LW Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="./mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link rel="icon" href="./LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="./Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname">Sky</div>
+		<div id="shadow"></div>
+		<div class="left3 c3">
+			<img src="./Images/Sky/Sky1.jpg" class="img1" onclick="picShow(1);">
+			<img src="./Images/Sky/Sky4.jpg" class="img1" onclick="picShow(4);">
+			<img src="./Images/Sky/Sky7.jpg" class="img1" onclick="picShow(7);">
+			<img src="./Images/Sky/Sky10.jpg" class="img1" onclick="picShow(10);">
+			<img src="./Images/Sky/Sky13.jpg" class="img2" onclick="picShow(13);">
+			<img src="./Images/Sky/Sky16.jpg" class="img2" onclick="picShow(16);">
+			<img src="./Images/Sky/Sky19.jpg" class="img2" onclick="picShow(19);">
+			<!--<img src="./Images/Sky/Sky25.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky28.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky31.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky34.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky37.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky40.jpg" class="img3" onclick="picShow();">-->
+		</div>
+		<div class="mid3 c3">
+			<img src="./Images/Sky/Sky2.jpg" class="img1" onclick="picShow(2);">
+			<img src="./Images/Sky/Sky5.jpg" class="img1" onclick="picShow(5);">
+			<img src="./Images/Sky/Sky8.jpg" class="img1" onclick="picShow(8);">
+			<img src="./Images/Sky/Sky11.jpg" class="img1" onclick="picShow(11);">
+			<img src="./Images/Sky/Sky14.jpg" class="img2" onclick="picShow(14);">
+			<img src="./Images/Sky/Sky17.jpg" class="img2" onclick="picShow(17);">
+			<img src="./Images/Sky/Sky20.jpg" class="img2" onclick="picShow(20);">
+			<img src="./Images/Sky/Sky23.jpg" class="img2" onclick="picShow(23);">
+			<img src="./Images/Sky/Sky22.jpg" class="img2" onclick="picShow(22);">
+			<!--<img src="./Images/Sky/Sky26.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky29.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky32.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky35.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky38.jpg" class="img3" onclick="picShow();">-->
+		</div>
+		<div class="right3 c3">
+			<img src="./Images/Sky/Sky3.jpg" class="img1" onclick="picShow(3);">
+			<img src="./Images/Sky/Sky6.jpg" class="img1" onclick="picShow(6);">
+			<img src="./Images/Sky/Sky9.jpg" class="img1" onclick="picShow(9);">
+			<img src="./Images/Sky/Sky12.jpg" class="img1" onclick="picShow(12);">
+			<img src="./Images/Sky/Sky15.jpg" class="img2" onclick="picShow(15);">
+			<img src="./Images/Sky/Sky18.jpg" class="img2" onclick="picShow(18);">
+			<img src="./Images/Sky/Sky21.jpg" class="img2" onclick="picShow(21);">
+			<img src="./Images/Sky/Sky24.jpg" class="img2" onclick="picShow(24);">
+			<!--<img src="./Images/Sky/Sky27.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky30.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky33.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky36.jpg" class="img3" onclick="picShow();">
+			<img src="./Images/Sky/Sky39.jpg" class="img3" onclick="picShow();">-->
+		</div>
+		
+		<div id="Pic1full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky1.jpg" class="fullpic" id="Pic1">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Plymouth,+MI+48170/@42.3715069,-83.4837046,14z/data=!3m1!4b1!4m5!3m4!1s0x8824acd646ed7a09:0xfd86c793d01873f3!8m2!3d42.3714253!4d-83.4702132" target="_blank">
+						<u>Plymouth, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic2full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(1);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky2.jpg" class="fullpic" id="Pic2">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Aegean+Sea/@38.2937454,20.9736822,6z/data=!3m1!4b1!4m5!3m4!1s0x14959c66749e1ba9:0x89058c37001751b2!8m2!3d39.019184!4d25.268555" target="_blank">
+						<u>Aegean Sea</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic3full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky3.jpg" class="fullpic" id="Pic3">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Canton,+MI/@42.3075691,-83.5570815,12z/data=!3m1!4b1!4m5!3m4!1s0x883b53be61dd223f:0x4cfc83026575a920!8m2!3d42.3086444!4d-83.482116" target="_blank">
+						<u>Canton, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic4full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky4.jpg" class="fullpic" id="Pic4">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/United+States/@36.2408038,-113.7584948,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891" target="_blank">
+						<u>United States</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic5full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky5.jpg" class="fullpic" id="Pic5">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Long+Lake/@45.5332789,-84.397342,14z/data=!4m13!1m7!3m6!1s0x4d35a140109042af:0x6f9abc807bd0ea00!2sLong+Lake+Rd,+Aloha+Township,+MI+49721!3b1!8m2!3d45.5160632!4d-84.4162387!3m4!1s0x4d35a15057e87863:0x2fa6798e99f89b9b!8m2!3d45.5332789!4d-84.397342" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic6full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky6.jpg" class="fullpic" id="Pic6">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic7full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky7.jpg" class="fullpic" id="Pic7">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Canton,+MI/@42.3075691,-83.5570815,12z/data=!3m1!4b1!4m5!3m4!1s0x883b53be61dd223f:0x4cfc83026575a920!8m2!3d42.3086444!4d-83.482116" target="_blank">
+						<u>Canton, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic8full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky8.jpg" class="fullpic" id="Pic8">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Canton,+MI/@42.3075691,-83.5570815,12z/data=!3m1!4b1!4m5!3m4!1s0x883b53be61dd223f:0x4cfc83026575a920!8m2!3d42.3086444!4d-83.482116" target="_blank">
+						<u>Canton, Michigan</u>
+					</a>  
+				</div>
+			</div>
+		</div>
+		<div id="Pic9full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky9.jpg" class="fullpic" id="Pic9">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Whangarei,+New+Zealand/@-35.7116549,174.2177413,12z/data=!3m1!4b1!4m5!3m4!1s0x6d0b829c4e6b10c7:0x500ef6143a39927!8m2!3d-35.7251117!4d174.323708" target="_blank">
+							<u>Whangarei, New Zealand</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic10full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky10.jpg" class="fullpic" id="Pic10">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Greenland/@67.8799261,-73.8926162,3z/data=!3m1!4b1!4m5!3m4!1s0x4ea20dbbe3c07715:0x34cf9d830114e218!8m2!3d71.706936!4d-42.604303" target="_blank">
+						<u>Greenland</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic11full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky11.jpg" class="fullpic" id="Pic11">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic12full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky12.jpg" class="fullpic" id="Pic12">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/One+World+Trade+Center/@40.7129987,-74.0153496,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a197c06b7cb:0x40a06c78f79e5de6!8m2!3d40.7127431!4d-74.0133795" target="_blank">
+						<u>New York City, New York</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic13full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky13.jpg" class="fullpic" id="Pic13">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Ohio/@40.3477825,-84.9131363,7z/data=!3m1!4b1!4m5!3m4!1s0x8836e97ab54d8ec1:0xe5cd64399c9fd916!8m2!3d40.4172871!4d-82.907123" target="_blank">
+						<u>Ohio, United States</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic14full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky14.jpg" class="fullpic" id="Pic14">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic15full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky15.jpg" class="fullpic" id="Pic15">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic16full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky16.jpg" class="fullpic" id="Pic16">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Miami,+FL/@25.7825453,-80.2994995,12z/data=!3m1!4b1!4m5!3m4!1s0x88d9b0a20ec8c111:0xff96f271ddad4f65!8m2!3d25.7616798!4d-80.1917902" target="_blank">
+						<u>Miami, Florida</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic17full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky17.jpg" class="fullpic" id="Pic17">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Canton,+MI/@42.3075691,-83.5570815,12z/data=!3m1!4b1!4m5!3m4!1s0x883b53be61dd223f:0x4cfc83026575a920!8m2!3d42.3086444!4d-83.482116" target="_blank">
+						<u>Canton, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic18full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky18.jpg" class="fullpic" id="Pic18">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic19full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky19.jpg" class="fullpic" id="Pic19">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Caribbean+Sea/@15.1826997,-83.2106781,5z/data=!3m1!4b1!4m5!3m4!1s0x8c05740f2d973079:0x74e7300c2d25f9bc!8m2!3d14.5401107!4d-74.9676365" target="_blank">
+						<u>Caribbean Sea</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic20full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky20.jpg" class="fullpic" id="Pic20">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Lake+Superior/@47.6965747,-90.4766771,7z/data=!3m1!4b1!4m5!3m4!1s0x4d45420eefc37861:0x9c77f74884d014b5!8m2!3d47.723087!4d-86.940716" target="_blank">
+						<u>Lake Superior</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic21full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky21.jpg" class="fullpic" id="Pic21">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cape+Range+National+Park+WA+6707,+Australia/@-22.1577882,113.640077,10z/data=!3m1!4b1!4m5!3m4!1s0x2bfeb024bfb35567:0x400f6382479cba0!8m2!3d-22.1493202!4d113.9188374" target="_blank">
+						<u>Cape Range National Park, Western Australia</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic22full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky22.jpg" class="fullpic" id="Pic22">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Australia/@-21.0543552,95.2807226,3z/data=!3m1!4b1!4m5!3m4!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136" target="_blank">
+						<u>Australia</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic23full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky23.jpg" class="fullpic" id="Pic23">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Midori+Teppanyaki+and+Bar/@-31.9477569,115.8545741,17z/data=!3m1!4b1!4m5!3m4!1s0x2a32bad3335a28ad:0xd79e44fe0c065d83!8m2!3d-31.9477615!4d115.8567628" target="_blank">
+						<u>Perth, Western Australia</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic24full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<!--<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>-->
+				<img src="./Images/Sky/Sky24.jpg" class="fullpic" id="Pic24">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Cape+Range+National+Park/@-22.0790007,113.9828094,12.75z/data=!4m12!1m6!3m5!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!2sCape+Range+National+Park!8m2!3d-22.0709945!4d113.9774289!3m4!1s0x2bfeb01c328c7bbf:0xf00f639078b1f40!8m2!3d-22.0709945!4d113.9774289" target="_blank">
+						<u>Long Lake, Cheboygan, Michigan</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--<div id="Pic25full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky25.jpg" class="fullpic" id="Pic25">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Little+Salmon+Bay/@-32.0246376,115.5250523,17z/data=!4m12!1m6!3m5!1s0x2a2d5a5442996ffd:0x9032cfa0949b90f8!2sLittle+Salmon+Bay!8m2!3d-32.0246376!4d115.5250523!3m4!1s0x2a2d5a5442996ffd:0x9032cfa0949b90f8!8m2!3d-32.0246376!4d115.5250523" target="_blank">
+						<u>Salmon Point, Rottnest Island, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic26full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky26.jpg" class="fullpic" id="Pic26">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Narrows+Bridge/@-31.9633916,115.8449002,513m/data=!3m2!1e3!4b1!4m5!3m4!1s0x2a32a4d40647e0cd:0x94db357583bcab86!8m2!3d-31.9633916!4d115.8467172" target="_blank">
+						<u>Narrows Bridge, Perth, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic27full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky27.jpg" class="fullpic" id="Pic27">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Fremantle+WA+6160,+Sky/@-32.0525122,115.738461,14z/data=!3m1!4b1!4m5!3m4!1s0x2a32a249e10837bb:0x504f0b535df4480!8m2!3d-32.0569!4d115.7439" target="_blank">
+						<u>Fremantle, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic28full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky28.jpg" class="fullpic" id="Pic28">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Featherdale+Wildlife+Park/@-33.7659137,150.8819671,17z/data=!3m1!4b1!4m5!3m4!1s0x6b1299a01cdd818b:0xf017d68f9f2f360!8m2!3d-33.76583!4d150.884248" target="_blank">
+							<u>Featherdale Wildlife Park, Sydney, Sky</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic29full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky29.jpg" class="fullpic" id="Pic29">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Echo+Point/@-33.7325727,150.3030323,15z/data=!3m1!4b1!4m5!3m4!1s0x6b126eae8e0cd3d1:0x8b0601d2aec060df!8m2!3d-33.7325914!4d150.3117871" target="_blank">
+						<u>Echo Point, Blue Mountains, Sydney, Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic30full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky30.jpg" class="fullpic" id="Pic30">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Jarabi+Turtle+Centre/@-21.8068068,114.0998637,17z/data=!4m5!3m4!1s0x2bfecb7e0a211e55:0x3f7eb499041566f6!8m2!3d-21.8065379!4d114.1016221" target="_blank">
+						<u>Northwest Cape, Cape Range National Park, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic31full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky31.jpg" class="fullpic" id="Pic31">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Featherdale+Wildlife+Park/@-33.7659137,150.8819671,17z/data=!3m1!4b1!4m5!3m4!1s0x6b1299a01cdd818b:0xf017d68f9f2f360!8m2!3d-33.76583!4d150.884248" target="_blank">
+							<u>Featherdale Wildlife Park, Sydney, Sky</u>
+						</a>
+						&nbsp; | &nbsp; "Cooper the Koala"
+				</div>
+			</div>
+		</div>
+		<div id="Pic32full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky32.jpg" class="fullpic" id="Pic32">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Blue+Mountains/@-33.348173,149.7360398,9z/data=!3m1!4b1!4m5!3m4!1s0x6b12750cf28ca111:0x459d55ceda733f5e!8m2!3d-33.409983!4d150.3037323" target="_blank">
+							<u>Blue Mountains, Sydney, Sky</u>
+						</a>
+						&nbsp; | &nbsp; "Cooper the Koala"
+				</div>
+			</div>
+		</div>
+		<div id="Pic33full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky33.jpg" class="fullpic" id="Pic33">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Rottnest+Island+WA+6161,+Sky/@-31.9997758,115.3759779,10.54z/data=!4m5!3m4!1s0x2a2d5750a566b7fd:0x504f0b535df5020!8m2!3d-32.006204!4d115.5123398" target="_blank">
+						<u>Rottnest Island, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic34full" class="full">
+<div class="fullpicarea">
+	<div class="exitfullbtn" onclick="exitfull()">
+		<i class="fas fa-times"></i>
+	</div>
+	<div class="lastpicbtn" onclick="picSlide();">
+		<i class="fas fa-arrow-left"></i>
+	</div>
+	<div class="nextpicbtn" onclick="picSlide();">
+		<i class="fas fa-arrow-right"></i>
+	</div>
+	<img src="./Images/Sky/Sky34.jpg" class="fullpic" id="Pic34">
+</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Rottnest+Island+WA+6161,+Sky/@-31.9997758,115.3759779,10.54z/data=!4m5!3m4!1s0x2a2d5750a566b7fd:0x504f0b535df5020!8m2!3d-32.006204!4d115.5123398" target="_blank">
+						<u>Rottnest Island, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic35full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky35.jpg" class="fullpic" id="Pic35">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Freo+Icecream+%26+Waffles/@-32.0556504,115.7458463,632m/data=!3m2!1e3!4b1!4m5!3m4!1s0x2a32a17ae8d4aafd:0x3e5f26e2d1c401c8!8m2!3d-32.055655!4d115.748035" target="_blank">
+						<u>Freo Ice Cream & Waffles, Fremantle, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic36full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky36.jpg" class="fullpic" id="Pic36">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Red+Umbrella+Art+Gallery/@-32.0692635,115.7521094,188m/data=!3m1!1e3!4m5!3m4!1s0x0:0xc5c94825e0874910!8m2!3d-32.069338!4d115.7524145" target="_blank">
+						<u>Red Umbrella Art Gallery, Fremantle, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic37full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky37.jpg" class="fullpic" id="Pic37">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Kings+Park+and+Botanic+Garden/@-31.9710238,115.8290281,1147a,35y,43.85t/data=!3m1!1e3!4m12!1m6!3m5!1s0x2a32a525098d1f2f:0xec4a7b90626730e7!2sKings+Park+and+Botanic+Garden!8m2!3d-31.9609106!4d115.8321929!3m4!1s0x2a32a525098d1f2f:0xec4a7b90626730e7!8m2!3d-31.9609106!4d115.8321929" target="_blank">
+						<u>Kings Park and Botanic Garden, Perth, Western Sky</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic38full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky38.jpg" class="fullpic" id="Pic38">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Featherdale+Wildlife+Park/@-33.7659137,150.8819671,17z/data=!3m1!4b1!4m5!3m4!1s0x6b1299a01cdd818b:0xf017d68f9f2f360!8m2!3d-33.76583!4d150.884248" target="_blank">
+							<u>Featherdale Wildlife Park, Sydney, Sky</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic39full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky39.jpg" class="fullpic" id="Pic39">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Perth+WA,+Sky/@-31.967628,115.7588408,57361m/data=!3m1!1e3!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9505269!4d115.8604572" target="_blank">
+							<u>Perth, Western Sky</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic40full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+			<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Sky/Sky40.jpg" class="fullpic" id="Pic40">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Perth+WA,+Sky/@-31.967628,115.7588408,57361m/data=!3m1!1e3!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9505269!4d115.8604572" target="_blank">
+							<u>Perth, Western Sky</u>
+						</a>
+				</div>
+			</div>
+		</div>-->
+		
+		<div class="left2 c2">
+			<img src="./Images/Sky/Sky1.jpg" class="mimg1" onclick="picSlide(1);">
+			<img src="./Images/Sky/Sky3.jpg" class="mimg1" onclick="picSlide(3);">
+			<img src="./Images/Sky/Sky5.jpg" class="mimg1" onclick="picSlide(5);">
+			<img src="./Images/Sky/Sky7.jpg" class="mimg1" onclick="picSlide(7);">
+			<img src="./Images/Sky/Sky9.jpg" class="mimg1" onclick="picSlide(9);">
+			<img src="./Images/Sky/Sky11.jpg" class="mimg1" onclick="picSlide(11);">
+			<img src="./Images/Sky/Sky13.jpg" class="mimg2" onclick="picSlide(13);">
+			<img src="./Images/Sky/Sky15.jpg" class="mimg2" onclick="picSlide(15);">
+			<img src="./Images/Sky/Sky17.jpg" class="mimg2" onclick="picSlide(17);">
+			<img src="./Images/Sky/Sky19.jpg" class="mimg2" onclick="picSlide(19);">
+			<img src="./Images/Sky/Sky21.jpg" class="mimg2" onclick="picSlide(21);">
+			<img src="./Images/Sky/Sky23.jpg" class="mimg2" onclick="picSlide(23);">
+			<img src="./Images/Sky/Sky24.jpg" class="mimg2" onclick="picSlide(24);">
+			<!--<img src="./Images/Sky/Sky25.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky27.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky29.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky31.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky33.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky35.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky37.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky39.jpg" class="mimg3" onclick="picSlide();">-->
+		</div>
+		<div class="right2 c2">
+			<img src="./Images/Sky/Sky2.jpg" class="mimg1" onclick="picSlide(2);">
+			<img src="./Images/Sky/Sky4.jpg" class="mimg1" onclick="picSlide(4);">
+			<img src="./Images/Sky/Sky6.jpg" class="mimg1" onclick="picSlide(6);">
+			<img src="./Images/Sky/Sky8.jpg" class="mimg1" onclick="picSlide(8);">
+			<img src="./Images/Sky/Sky10.jpg" class="mimg1" onclick="picSlide(10);">
+			<img src="./Images/Sky/Sky12.jpg" class="mimg1" onclick="picSlide(12);">
+			<img src="./Images/Sky/Sky14.jpg" class="mimg2" onclick="picSlide(14);">
+			<img src="./Images/Sky/Sky16.jpg" class="mimg2" onclick="picSlide(16);">
+			<img src="./Images/Sky/Sky18.jpg" class="mimg2" onclick="picSlide(18);">
+			<img src="./Images/Sky/Sky20.jpg" class="mimg2" onclick="picSlide(20);">
+			<img src="./Images/Sky/Sky22.jpg" class="mimg2" onclick="picSlide(22);">
+			<!--<img src="./Images/Sky/Sky26.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky28.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky30.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky32.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky34.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky36.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky38.jpg" class="mimg3" onclick="picSlide();">
+			<img src="./Images/Sky/Sky40.jpg" class="mimg3" onclick="picSlide();">-->
+		</div>
+		<button class="loadmore" id="loadmore1" onclick="loadMore(2);">Load More</button>
+
+		<button class="loadmoremobile" id="loadmoremobile1" onclick="loadMobile(2);">Load More</button>
+
+		<p id="testdevice"></p>
+	</body>
+</html>

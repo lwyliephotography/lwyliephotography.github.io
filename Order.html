@@ -1,0 +1,195 @@
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
+<html>
+	<head> <script type="text/javascript" src="scriptNew.js" async="true"></script>
+		<title>Order | LW Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Algreya' rel='stylesheet'>
+		<link rel="icon" href="LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<style>
+		    @media only screen and (max-width:600px) {
+		        .locationname {
+		            font-size: 5vw;
+		        }
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname">Order</div>
+		<div id="mainorder">
+			<b>If you are interested in ordering physical prints of my photos you have come to the right place!</b>
+			<br><br>
+			<i>If you would like to view/purchase other artwork and jewelry I have created, check out <u><a href="https://www.instagram.com/paintingsandpieces/" target="_blank">my artwork profile</a></u>.</i>
+<br><br>
+If you would like to purchase photos(s) seen on this website please email <u><a href="mailto:wylieartwork@gmail.com">wylieartwork@gmail.com</a></u> and include the following information for clarity and efficiency:
+	<div class="orderlist">
+		<br>
+		1) Either a brief description of the picture(s) with it's tagged location, or attached screenshots of the picture(s) you wish to purchase
+		<br>
+		2) The size and material you would like the print(s) to be. This can be either in exact measurements or just an approximation (see options below)
+		<br>
+		3) The state/country you live in so I am able to estimate shipping fees
+		<br>
+		4) Any questions you may have about the photos or the purchasing process
+		<br>
+		5) If your email is not a good way to reach you, provide an alternate contact form such as a phone number, instagram handle, etc. so I can message you that way. 
+	</div>
+	<br>
+<b><u>I Sent My Email Request. What's Next?</u></b>
+<br>
+Once your request to purchase has been received I will send you the total cost of your order along with what the final version of your purchase will look like. I will ask you if at this point you want to complete your order, change it, or cancel it. If at this point you change or cancel your prints, that is okay. Just reply with the changes you would like to make or say cancel order. If you want to complete your purchase at the set price, you should reply with your address, as well as your Paypal or Venmo account name. You will be notified when your prints are being shipped, and at this point I will request payment from you via PayPal or Venmo. 
+<br><br>
+Also don't sweat it if you can't remember all of these steps, you don't need to! I will ask these questions again in my reply emails to guide you. This is just for your reference.
+<br><br>
+*<i>I will not print any photos before I am given a confirmation of payment and an address to ship to, however once you do this sales are final and cannot be canceled, returned, or refunded except in rare cases if it arrived severely damaged from shipping.</i>
+<br><br>
+<b><u>Can I Order Any Photo I Want?</u></b>
+<br>
+You can order prints of any photograph from this website with one major exception. You <b>cannot</b> order prints of photos where a person is the <i>main subject</i> and their face is visible. Most of these are portrait style photos and are found in the "People" tab. If you are unsure if a photo you want to purchase is "off-limits" just ask via email. 
+<br><br>
+The only situation in which I will allow these photos to be purchased is if the subject of the photo is a family member or close friend of yours and I have their permission to do so. 
+<br><br>
+<b><u>Printing Size & Material Options</u></b>
+<br>
+Prints can be ordered in various sizes, from small wallet sizes to large prints of 24" x 36" and everything in between. For reference, most printed pictures like the ones in photo albums are 4x6 in. (Note: if the dimensions you request for physical prints do not exactly match the original photo, some areas will need to be cropped. If this occurs the cropped version will be sent to you via email to get your approval before you complete your purchase.)
+<br><br>
+Photos can also be printed on different materials including photo paper, canvas, photo posters, and postcards. You can also choose from glossy, matte, or satin finishes!
+<br><br>
+<b><u>Payment</u></b>
+<br>
+The price I send to you includes shipping and tax. At this time, I am accepting payment through Venmo or PayPal. In some rare circumstances payment may be accepted in other forms such as cash, however this will most likely only be if you are able to pay in person.
+		</div>
+	</body>
+</html>

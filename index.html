@@ -1,7 +1,194 @@
-<!DOCTYPE html>
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
 <html>
-<head></head>
-<body>
-  <h1>LWyliePhotos</h1>
-</body>
+	<head> <script type="text/javascript" src="scriptNew.js" async="true"></script>
+		<title>Lauren Wylie Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Algreya' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
+		<link rel="icon" href="LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style>
+			@media only screen and (max-width:600px) {
+				.locationname {
+					font-size: 3.5vw;
+				}
+			}
+			
+			.headercontainer {
+				position: relative;
+				top: 0;
+			}
+	</style>
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname" style="font-family:Meddon;text-decoration:none">Welcome!</div>
+		<div class="imlauren">I'M LAUREN &#8226; THANKS FOR STOPPING BY</div>
+		<img src="collage.jpg" class="collage">
+		<div class="mobileparagraph">
+			Check out some of the adventures I've embarked on, even as a full time student!
+		</div>
+		<img src="featuredline.jpg" class="featline">
+		<img src="./Images/Home/Home1.jpg" class="sspics fade" id="ss1">
+		<img src="./Images/Home/Home2.jpg" class="sspics fade" id="ss2">
+		<img src="./Images/Home/Home3.jpg" class="sspics fade" id="ss3">
+		<img src="./Images/Home/Home4.jpg" class="sspics fade" id="ss4">
+		<img src="./Images/Home/Home5.jpg" class="sspics fade" id="ss5">
+		<img src="./Images/Home/Home6.jpg" class="sspics fade" id="ss6">
+		<img src="./Images/Home/Home7.jpg" class="sspics fade" id="ss7">
+		<img src="./Images/Home/Home8.jpg" class="sspics fade" id="ss8">
+		<img src="./Images/Home/Home9.jpg" class="sspics fade" id="ss9">
+		<img src="./Images/Home/Home10.jpg" class="sspics fade" id="ss10">
+		<img src="./Images/Home/Home11.jpg" class="sspics fade" id="ss11">
+		<img src="./Images/Home/Home12.jpg" class="sspics fade" id="ss12">
+		<img src="./Images/Home/Home13.jpg" class="sspics fade" id="ss13">
+		<img src="./Images/Home/Home14.jpg" class="sspics fade" id="ss14">
+		<img src="./Images/Home/Home15.jpg" class="sspics fade" id="ss15">
+		<img src="./Images/Home/Home16.jpg" class="sspics fade" id="ss16">
+		<img src="./Images/Home/Home17.jpg" class="sspics fade" id="ss17">
+		<img src="./Images/Home/Home18.jpg" class="sspics fade" id="ss18">
+		<img src="./Images/Home/Home19.jpg" class="sspics fade" id="ss19">
+		<img src="./Images/Home/Home20.jpg" class="sspics fade" id="ss20">
+		<img src="./Images/Home/Home21.jpg" class="sspics fade" id="ss21">
+		<img src="./Images/Home/Home22.jpg" class="sspics fade" id="ss22">
+		<img src="./Images/Home/Home23.jpg" class="sspics fade" id="ss23">
+		<img src="./Images/Home/Home24.jpg" class="sspics fade" id="ss24">
+		<img src="./Images/Home/Home25.jpg" class="sspics fade" id="ss25">
+		<img src="./Images/Home/Home26.jpg" class="sspics fade" id="ss26">
+		<img src="./Images/Home/Home27.jpg" class="sspics fade" id="ss27">
+		<img src="./Images/Home/Home28.jpg" class="sspics fade" id="ss28">
+		<div class="ssbodymargin"></div>
+	</body>
 </html>

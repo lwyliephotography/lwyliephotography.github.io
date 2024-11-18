@@ -1,0 +1,1121 @@
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
+<html>
+	<head> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143601127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143601127-1');
+</script>
+
+	<script type="text/javascript" src="./scriptNew.js" async="true"></script>
+	<script type="text/javascript">var loads = 3;</script>
+		<title>Caribbean | LW Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="./mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link rel="icon" href="./LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="./Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname">Caribbean</div>
+		<div id="shadow"></div>
+		
+			<div class="left3 c3">
+				<img src="./Images/Caribbean/Caribbean1.jpg" class="img1" onclick="picShow(1);">
+				<img src="./Images/Caribbean/Caribbean4.jpg" class="img1" onclick="picShow(4);">
+				<img src="./Images/Caribbean/Caribbean7.jpg" class="img1" onclick="picShow(7);">
+				<img src="./Images/Caribbean/Caribbean10.jpg" class="img1" onclick="picShow(10);">
+				<img src="./Images/Caribbean/Caribbean13.jpg" class="img2" onclick="picShow(13);">
+				<img src="./Images/Caribbean/Caribbean16.jpg" class="img2" onclick="picShow(16);">
+				<img src="./Images/Caribbean/Caribbean19.jpg" class="img2" onclick="picShow(19);">
+				<img src="./Images/Caribbean/Caribbean22.jpg" class="img2" onclick="picShow(22);">
+				<img src="./Images/Caribbean/Caribbean25.jpg" class="img3" onclick="picShow(25);">
+				<img src="./Images/Caribbean/Caribbean28.jpg" class="img3" onclick="picShow(28);">
+				<img src="./Images/Caribbean/Caribbean34.jpg" class="img3" onclick="picShow(34);">
+			</div>
+			<div class="mid3 c3">
+				<img src="./Images/Caribbean/Caribbean2.jpg" class="img1" onclick="picShow(2);">
+				<img src="./Images/Caribbean/Caribbean5.jpg" class="img1" onclick="picShow(5);">
+				<img src="./Images/Caribbean/Caribbean8.jpg" class="img1" onclick="picShow(8);">
+				<img src="./Images/Caribbean/Caribbean11.jpg" class="img1" onclick="picShow(11);">
+				<img src="./Images/Caribbean/Caribbean14.jpg" class="img2" onclick="picShow(14);">
+				<img src="./Images/Caribbean/Caribbean17.jpg" class="img2" onclick="picShow(17);">
+				<img src="./Images/Caribbean/Caribbean20.jpg" class="img2" onclick="picShow(20);">
+				<img src="./Images/Caribbean/Caribbean23.jpg" class="img2" onclick="picShow(23);">
+				<img src="./Images/Caribbean/Caribbean26.jpg" class="img3" onclick="picShow(26);">
+				<img src="./Images/Caribbean/Caribbean29.jpg" class="img3" onclick="picShow(29);">
+				<img src="./Images/Caribbean/Caribbean32.jpg" class="img3" onclick="picShow(32);">
+				<img src="./Images/Caribbean/Caribbean35.jpg" class="img3" onclick="picShow(35);">
+			</div>
+			<div class="right3 c3">
+				<img src="./Images/Caribbean/Caribbean3.jpg" class="img1" onclick="picShow(3);">
+				<img src="./Images/Caribbean/Caribbean6.jpg" class="img1" onclick="picShow(6);">
+				<img src="./Images/Caribbean/Caribbean9.jpg" class="img1" onclick="picShow(9);">
+				<img src="./Images/Caribbean/Caribbean12.jpg" class="img1" onclick="picShow(12);">
+				<img src="./Images/Caribbean/Caribbean15.jpg" class="img2" onclick="picShow(15);">
+				<img src="./Images/Caribbean/Caribbean18.jpg" class="img2" onclick="picShow(18);">
+				<img src="./Images/Caribbean/Caribbean21.jpg" class="img2" onclick="picShow(21);">
+				<img src="./Images/Caribbean/Caribbean24.jpg" class="img2" onclick="picShow(24);">
+				<img src="./Images/Caribbean/Caribbean27.jpg" class="img3" onclick="picShow(27);">
+				<img src="./Images/Caribbean/Caribbean30.jpg" class="img3" onclick="picShow(30);">
+				<img src="./Images/Caribbean/Caribbean33.jpg" class="img3" onclick="picShow(33);">
+				<img src="./Images/Caribbean/Caribbean31.jpg" class="img3" onclick="picShow(31);">
+				<img src="./Images/Caribbean/Caribbean36.jpg" class="img4" onclick="picShow(36);">
+			</div>
+		
+		<div id="Pic1full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean1.jpg" class="fullpic" id="Pic1">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cozumel/@20.4323493,-87.0143424,11z/data=!4m8!1m2!2m1!1scozumel+mexico!3m4!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432" target="_blank">
+						<u>Cozumel, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic2full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(1);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean2.jpg" class="fullpic" id="Pic2">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic3full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean3.jpg" class="fullpic" id="Pic3">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic4full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean4.jpg" class="fullpic" id="Pic4">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cozumel/@20.4323493,-87.0143424,11z/data=!4m8!1m2!2m1!1scozumel+mexico!3m4!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432" target="_blank">
+						<u>Cozumel, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic5full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean5.jpg" class="fullpic" id="Pic5">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+							<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic6full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean6.jpg" class="fullpic" id="Pic6">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+							<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic7full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean7.jpg" class="fullpic" id="Pic7">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Falmouth,+Jamaica/@18.4903229,-77.6706959,15z/data=!3m1!4b1!4m5!3m4!1s0x8eda33f8c3cfab6b:0x947175f8cf7d2536!8m2!3d18.4928457!4d-77.656476" target="_blank">
+						<u>Falmouth, Jamaica</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic8full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean8.jpg" class="fullpic" id="Pic8">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Aruba/@12.5186544,-70.1073783,11z/data=!3m1!4b1!4m5!3m4!1s0x8e8538cfe25a77db:0xf16a8a3e89818c2f!8m2!3d12.52111!4d-69.968338" target="_blank">
+						<u>Aruba</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic9full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean9.jpg" class="fullpic" id="Pic9">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Aruba/@12.5186544,-70.1073783,11z/data=!3m1!4b1!4m5!3m4!1s0x8e8538cfe25a77db:0xf16a8a3e89818c2f!8m2!3d12.52111!4d-69.968338" target="_blank">
+						<u>Aruba</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic10full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean10.jpg" class="fullpic" id="Pic10">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic11full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean11.jpg" class="fullpic" id="Pic11">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic12full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean12.jpg" class="fullpic" id="Pic12">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic13full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean13.jpg" class="fullpic" id="Pic13">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Falmouth,+Jamaica/@18.4903229,-77.6706959,15z/data=!3m1!4b1!4m5!3m4!1s0x8eda33f8c3cfab6b:0x947175f8cf7d2536!8m2!3d18.4928457!4d-77.656476" target="_blank">
+						<u>Falmouth, Jamaica</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic14full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean14.jpg" class="fullpic" id="Pic14">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cozumel/@20.4323493,-87.0143424,11z/data=!4m8!1m2!2m1!1scozumel+mexico!3m4!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432" target="_blank">
+						<u>Cozumel, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic15full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean15.jpg" class="fullpic" id="Pic15">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Falmouth,+Jamaica/@18.4903229,-77.6706959,15z/data=!3m1!4b1!4m5!3m4!1s0x8eda33f8c3cfab6b:0x947175f8cf7d2536!8m2!3d18.4928457!4d-77.656476" target="_blank">
+						<u>Falmouth, Jamaica</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic16full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean16.jpg" class="fullpic" id="Pic16">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic17full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean17.jpg" class="fullpic" id="Pic17">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cozumel/@20.4323493,-87.0143424,11z/data=!4m8!1m2!2m1!1scozumel+mexico!3m4!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432" target="_blank">
+						<u>Cozumel, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic18full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean18.jpg" class="fullpic" id="Pic18">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Caribbean+Sea/@15.1826997,-83.2106781,5z/data=!3m1!4b1!4m5!3m4!1s0x8c05740f2d973079:0x74e7300c2d25f9bc!8m2!3d14.5401107!4d-74.9676365" target="_blank">
+							<u>Caribbean Sea</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic19full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean19.jpg" class="fullpic" id="Pic19">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic20full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean20.jpg" class="fullpic" id="Pic20">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Aruba/@12.5186544,-70.1073783,11z/data=!3m1!4b1!4m5!3m4!1s0x8e8538cfe25a77db:0xf16a8a3e89818c2f!8m2!3d12.52111!4d-69.968338" target="_blank">
+						<u>Aruba</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic21full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean21.jpg" class="fullpic" id="Pic21">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic22full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean22.jpg" class="fullpic" id="Pic22">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cozumel/@20.4323493,-87.0143424,11z/data=!4m8!1m2!2m1!1scozumel+mexico!3m4!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432" target="_blank">
+						<u>Cozumel, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic23full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean23.jpg" class="fullpic" id="Pic23">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic24full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean24.jpg" class="fullpic" id="Pic24">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Caribbean+Sea/@15.1826997,-83.2106781,5z/data=!3m1!4b1!4m5!3m4!1s0x8c05740f2d973079:0x74e7300c2d25f9bc!8m2!3d14.5401107!4d-74.9676365" target="_blank">
+							<u>Caribbean Sea</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic25full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean25.jpg" class="fullpic" id="Pic25">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Falmouth,+Jamaica/@18.4903229,-77.6706959,15z/data=!3m1!4b1!4m5!3m4!1s0x8eda33f8c3cfab6b:0x947175f8cf7d2536!8m2!3d18.4928457!4d-77.656476" target="_blank">
+						<u>Falmouth, Jamaica</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic26full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean26.jpg" class="fullpic" id="Pic26">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic27full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean27.jpg" class="fullpic" id="Pic27">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic28full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean28.jpg" class="fullpic" id="Pic28">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic29full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean29.jpg" class="fullpic" id="Pic29">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Falmouth,+Jamaica/@18.4903229,-77.6706959,15z/data=!3m1!4b1!4m5!3m4!1s0x8eda33f8c3cfab6b:0x947175f8cf7d2536!8m2!3d18.4928457!4d-77.656476" target="_blank">
+						<u>Falmouth, Jamaica</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic30full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean30.jpg" class="fullpic" id="Pic30">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Cayman/@19.3301477,-81.3925164,11z/data=!3m1!4b1!4m5!3m4!1s0x8f258987d79949a1:0x3a0bed0c18902c49!8m2!3d19.3221698!4d-81.2408689" target="_blank">
+						<u>Grand Cayman, Cayman Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic31full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean31.jpg" class="fullpic" id="Pic31">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic32full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean32.jpg" class="fullpic" id="Pic32">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic33full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean33.jpg" class="fullpic" id="Pic33">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Grand+Turk/@21.468088,-71.1748459,13z/data=!3m1!4b1!4m5!3m4!1s0x8eb2d454094df585:0xcb03d9c378c4644f!8m2!3d21.4674584!4d-71.1389101" target="_blank">
+						<u>Grand Turk, Turks and Caicos Islands</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic34full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean34.jpg" class="fullpic" id="Pic34">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cabo+San+Lucas,+Baja+California+Sur,+Mexico/@22.8962225,-109.9680177,13z/data=!3m1!4b1!4m5!3m4!1s0x86af4af389e508a1:0x4ba4df62c1a2b868!8m2!3d22.8905327!4d-109.9167371" target="_blank">
+						<u>Cabo San Lucas, Mexico</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic35full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(36);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean35.jpg" class="fullpic" id="Pic35">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Cura%C3%A7ao/@12.2088296,-69.2132067,10z/data=!3m1!4b1!4m5!3m4!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723!8m2!3d12.16957!4d-68.99002" target="_blank">
+						<u>Cura&#231;ao</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic36full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<!--<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>-->
+				<img src="./Images/Caribbean/Caribbean36.jpg" class="fullpic" id="Pic36">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Red+Umbrella+Art+Gallery/@-32.0692635,115.7521094,188m/data=!3m1!1e3!4m5!3m4!1s0x0:0xc5c94825e0874910!8m2!3d-32.069338!4d115.7524145" target="_blank">
+						<u>Red Umbrella Art Gallery, Fremantle, Western Caribbean</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--<div id="Pic37full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean37.jpg" class="fullpic" id="Pic37">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;<a href="https://www.google.com/maps/place/Kings+Park+and+Botanic+Garden/@-31.9710238,115.8290281,1147a,35y,43.85t/data=!3m1!1e3!4m12!1m6!3m5!1s0x2a32a525098d1f2f:0xec4a7b90626730e7!2sKings+Park+and+Botanic+Garden!8m2!3d-31.9609106!4d115.8321929!3m4!1s0x2a32a525098d1f2f:0xec4a7b90626730e7!8m2!3d-31.9609106!4d115.8321929" target="_blank">
+						<u>Kings Park and Botanic Garden, Perth, Western Caribbean</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic38full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean38.jpg" class="fullpic" id="Pic38">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Featherdale+Wildlife+Park/@-33.7659137,150.8819671,17z/data=!3m1!4b1!4m5!3m4!1s0x6b1299a01cdd818b:0xf017d68f9f2f360!8m2!3d-33.76583!4d150.884248" target="_blank">
+							<u>Featherdale Wildlife Park, Sydney, Caribbean</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic39full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean39.jpg" class="fullpic" id="Pic39">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Perth+WA,+Caribbean/@-31.967628,115.7588408,57361m/data=!3m1!1e3!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9505269!4d115.8604572" target="_blank">
+							<u>Perth, Western Caribbean</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic40full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+			<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Caribbean/Caribbean40.jpg" class="fullpic" id="Pic40">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Perth+WA,+Caribbean/@-31.967628,115.7588408,57361m/data=!3m1!1e3!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9505269!4d115.8604572" target="_blank">
+							<u>Perth, Western Caribbean</u>
+						</a>
+				</div>
+			</div>
+		</div>-->
+			<div class="left2 c2">
+				<img src="./Images/Caribbean/Caribbean1.jpg" class="mimg1" onclick="picSlide(1);">
+				<img src="./Images/Caribbean/Caribbean3.jpg" class="mimg1" onclick="picSlide(3);">
+				<img src="./Images/Caribbean/Caribbean5.jpg" class="mimg1" onclick="picSlide(5);">
+				<img src="./Images/Caribbean/Caribbean7.jpg" class="mimg1" onclick="picSlide(7);">
+				<img src="./Images/Caribbean/Caribbean9.jpg" class="mimg1" onclick="picSlide(9);">
+				<img src="./Images/Caribbean/Caribbean11.jpg" class="mimg1" onclick="picSlide(11);">
+				<img src="./Images/Caribbean/Caribbean13.jpg" class="mimg2" onclick="picSlide(13);">
+				<img src="./Images/Caribbean/Caribbean15.jpg" class="mimg2" onclick="picSlide(15);">
+				<img src="./Images/Caribbean/Caribbean17.jpg" class="mimg2" onclick="picSlide(17);">
+				<img src="./Images/Caribbean/Caribbean19.jpg" class="mimg2" onclick="picSlide(19);">
+				<img src="./Images/Caribbean/Caribbean21.jpg" class="mimg2" onclick="picSlide(21);">
+				<img src="./Images/Caribbean/Caribbean23.jpg" class="mimg2" onclick="picSlide(23);">
+				<img src="./Images/Caribbean/Caribbean25.jpg" class="mimg3" onclick="picSlide(25);">
+				<img src="./Images/Caribbean/Caribbean27.jpg" class="mimg3" onclick="picSlide(27);">
+				<img src="./Images/Caribbean/Caribbean29.jpg" class="mimg3" onclick="picSlide(29);">
+				<img src="./Images/Caribbean/Caribbean33.jpg" class="mimg3" onclick="picSlide(33);">
+			</div>
+			<div class="right2 c2">
+				<img src="./Images/Caribbean/Caribbean2.jpg" class="mimg1" onclick="picSlide(2);">
+				<img src="./Images/Caribbean/Caribbean4.jpg" class="mimg1" onclick="picSlide(4);">
+				<img src="./Images/Caribbean/Caribbean6.jpg" class="mimg1" onclick="picSlide(6);">
+				<img src="./Images/Caribbean/Caribbean8.jpg" class="mimg1" onclick="picSlide(8);">
+				<img src="./Images/Caribbean/Caribbean10.jpg" class="mimg1" onclick="picSlide(10);">
+				<img src="./Images/Caribbean/Caribbean12.jpg" class="mimg1" onclick="picSlide(12);">
+				<img src="./Images/Caribbean/Caribbean14.jpg" class="mimg2" onclick="picSlide(14);">
+				<img src="./Images/Caribbean/Caribbean16.jpg" class="mimg2" onclick="picSlide(16);">
+				<img src="./Images/Caribbean/Caribbean18.jpg" class="mimg2" onclick="picSlide(18);">
+				<img src="./Images/Caribbean/Caribbean20.jpg" class="mimg2" onclick="picSlide(20);">
+				<img src="./Images/Caribbean/Caribbean22.jpg" class="mimg2" onclick="picSlide(22);">
+				<img src="./Images/Caribbean/Caribbean24.jpg" class="mimg2" onclick="picSlide(24);">
+				<img src="./Images/Caribbean/Caribbean26.jpg" class="mimg3" onclick="picSlide(26);">
+				<img src="./Images/Caribbean/Caribbean28.jpg" class="mimg3" onclick="picSlide(28);">
+				<img src="./Images/Caribbean/Caribbean30.jpg" class="mimg3" onclick="picSlide(30);">
+				<img src="./Images/Caribbean/Caribbean31.jpg" class="mimg3" onclick="picSlide(31);">
+				<img src="./Images/Caribbean/Caribbean32.jpg" class="mimg3" onclick="picSlide(32);">
+			</div>
+
+			<button class="loadmore" id="loadmore1" onclick="loadMore(2);">Load More</button>
+			<button class="loadmore" id="loadmore2" onclick="loadMore(3);">Load More</button>
+
+			<button class="loadmoremobile" id="loadmoremobile1" onclick="loadMobile(2);">Load More</button>
+			<button class="loadmoremobile" id="loadmoremobile2" onclick="loadMobile(3);">Load More</button>
+
+			<p id="testdevice"></p>
+	</body>
+</html>

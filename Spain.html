@@ -1,0 +1,1374 @@
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
+<html>
+	<head> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143601127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143601127-1');
+</script>
+
+	<script type="text/javascript" src="./scriptNew.js" async="true"></script>
+		<title>Spain | LW Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="./mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link rel="icon" href="./LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="./Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname">Spain</div>
+		<div id="shadow"></div>
+		<div class="left3 c3">
+			<img src="./Images/Spain/Spain1.jpg" class="img1" onclick="picShow(1);">
+			<img src="./Images/Spain/Spain4.jpg" class="img1" onclick="picShow(4);">
+			<img src="./Images/Spain/Spain10.jpg" class="img1" onclick="picShow(10);">
+			<img src="./Images/Spain/Spain13.jpg" class="img2" onclick="picShow(13);">
+			<img src="./Images/Spain/Spain16.jpg" class="img2" onclick="picShow(16);">
+			<img src="./Images/Spain/Spain19.jpg" class="img2" onclick="picShow(19);">
+			<img src="./Images/Spain/Spain22.jpg" class="img2" onclick="picShow(22);">
+			<img src="./Images/Spain/Spain25.jpg" class="img3" onclick="picShow(25);">
+			<img src="./Images/Spain/Spain28.jpg" class="img3" onclick="picShow(28);">
+			<img src="./Images/Spain/Spain31.jpg" class="img3" onclick="picShow(31);">
+			<img src="./Images/Spain/Spain34.jpg" class="img3" onclick="picShow(34);">
+			<img src="./Images/Spain/Spain37.jpg" class="img4" onclick="picShow(37);">
+			<img src="./Images/Spain/Spain40.jpg" class="img4" onclick="picShow(40);">
+			<img src="./Images/Spain/Spain43.jpg" class="img4" onclick="picShow(43);">
+			<img src="./Images/Spain/Spain46.jpg" class="img4" onclick="picShow(46);">
+			<img src="./Images/Spain/Spain50.jpg" class="img4" onclick="picShow(50);">
+		</div>
+		<div class="mid3 c3">
+			<img src="./Images/Spain/Spain2.jpg" class="img1" onclick="picShow(2);">
+			<img src="./Images/Spain/Spain5.jpg" class="img1" onclick="picShow(5);">
+			<img src="./Images/Spain/Spain7.jpg" class="img1" onclick="picShow(7);">
+			<img src="./Images/Spain/Spain8.jpg" class="img1" onclick="picShow(8);">
+			<img src="./Images/Spain/Spain11.jpg" class="img1" onclick="picShow(11);">
+			<img src="./Images/Spain/Spain14.jpg" class="img2" onclick="picShow(14);">
+			<img src="./Images/Spain/Spain17.jpg" class="img2" onclick="picShow(17);">
+			<img src="./Images/Spain/Spain20.jpg" class="img2" onclick="picShow(20);">
+			<img src="./Images/Spain/Spain23.jpg" class="img2" onclick="picShow(23);">
+			<img src="./Images/Spain/Spain26.jpg" class="img3" onclick="picShow(26);">
+			<img src="./Images/Spain/Spain29.jpg" class="img3" onclick="picShow(29);">
+			<img src="./Images/Spain/Spain32.jpg" class="img3" onclick="picShow(32);">
+			<img src="./Images/Spain/Spain35.jpg" class="img3" onclick="picShow(35);">
+			<img src="./Images/Spain/Spain38.jpg" class="img4" onclick="picShow(38);">
+			<img src="./Images/Spain/Spain41.jpg" class="img4" onclick="picShow(41);">
+			<img src="./Images/Spain/Spain44.jpg" class="img4" onclick="picShow(44);">
+			<img src="./Images/Spain/Spain47.jpg" class="img4" onclick="picShow(47);">
+			<img src="./Images/Spain/Spain49.jpg" class="img4" onclick="picShow(49);">
+		</div>
+		<div class="right3 c3">
+			<img src="./Images/Spain/Spain3.jpg" class="img1" onclick="picShow(3);">
+			<img src="./Images/Spain/Spain6.jpg" class="img1" onclick="picShow(6);">
+			<img src="./Images/Spain/Spain9.jpg" class="img1" onclick="picShow(9);">
+			<img src="./Images/Spain/Spain12.jpg" class="img1" onclick="picShow(12);">
+			<img src="./Images/Spain/Spain15.jpg" class="img2" onclick="picShow(15);">
+			<img src="./Images/Spain/Spain18.jpg" class="img2" onclick="picShow(18);">
+			<img src="./Images/Spain/Spain21.jpg" class="img2" onclick="picShow(21);">
+			<img src="./Images/Spain/Spain24.jpg" class="img2" onclick="picShow(24);">
+			<img src="./Images/Spain/Spain27.jpg" class="img3" onclick="picShow(27);">
+			<img src="./Images/Spain/Spain30.jpg" class="img3" onclick="picShow(30);">
+			<img src="./Images/Spain/Spain33.jpg" class="img3" onclick="picShow(33);">
+			<img src="./Images/Spain/Spain36.jpg" class="img3" onclick="picShow(36);">
+			<img src="./Images/Spain/Spain39.jpg" class="img4" onclick="picShow(39);">
+			<img src="./Images/Spain/Spain42.jpg" class="img4" onclick="picShow(42);">
+			<img src="./Images/Spain/Spain45.jpg" class="img4" onclick="picShow(45);">
+			<img src="./Images/Spain/Spain48.jpg" class="img4" onclick="picShow(48);">
+		</div>
+		
+		<div id="Pic1full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain1.jpg" class="fullpic" id="Pic1">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic2full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(1);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain2.jpg" class="fullpic" id="Pic2">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Temple+of+Debod/@40.4240257,-3.7199582,17z/data=!3m1!4b1!4m5!3m4!1s0xd42286e8bea1259:0x1d6ad9c64a7706ab!8m2!3d40.4240216!4d-3.7177695" target="_blank">
+						<u>Temple of Debod, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic3full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain3.jpg" class="fullpic" id="Pic3">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/La+Almudena/@40.4236216,-3.6413299,17z/data=!3m1!4b1!4m5!3m4!1s0xd422f664971ec45:0x85c47a5aaf141c41!8m2!3d40.4236175!4d-3.6391412" target="_blank">
+						<u>La Almudena, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic4full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain4.jpg" class="fullpic" id="Pic4">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Tagus River, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic5full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain5.jpg" class="fullpic" id="Pic5">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic6full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain6.jpg" class="fullpic" id="Pic6">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic7full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain7.jpg" class="fullpic" id="Pic7">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic8full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain8.jpg" class="fullpic" id="Pic8">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Temple+of+Debod/@40.4240257,-3.7199582,17z/data=!3m1!4b1!4m5!3m4!1s0xd42286e8bea1259:0x1d6ad9c64a7706ab!8m2!3d40.4240216!4d-3.7177695" target="_blank">
+						<u>Temple of Debod, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic9full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain9.jpg" class="fullpic" id="Pic9">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Hotel+Emperador/@40.4214096,-3.7103293,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287b607edd6f:0xcf29d0a106fe8a5!8m2!3d40.4214055!4d-3.7081406" target="_blank">
+							<u>Madrid, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic10full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain10.jpg" class="fullpic" id="Pic10">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Hotel+Emperador/@40.4214096,-3.7103293,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287b607edd6f:0xcf29d0a106fe8a5!8m2!3d40.4214055!4d-3.7081406" target="_blank">
+						<u>Gran V&#237;a, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic11full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain11.jpg" class="fullpic" id="Pic11">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic12full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain12.jpg" class="fullpic" id="Pic12">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic13full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain13.jpg" class="fullpic" id="Pic13">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic14full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain14.jpg" class="fullpic" id="Pic14">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic15full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain15.jpg" class="fullpic" id="Pic15">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic16full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain16.jpg" class="fullpic" id="Pic16">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/San+Jer%C3%B3nimo+el+Real/@40.4145069,-3.693079,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289d7445cc67:0x5072f96c241507c2!8m2!3d40.4145028!4d-3.6908903" target="_blank">
+						<u>Iglesia de San Jer&#243;nimo Real, Madrid</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic17full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain17.jpg" class="fullpic" id="Pic17">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Plaza+Cuatro+Calles,+45001+Toledo,+Spain/@39.8583194,-4.0255971,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba5d7bb09eb:0xac67b70c9e7092!8m2!3d39.8583153!4d-4.0234084" target="_blank">
+						<u>Plaza de las Cuatro Calles, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic18full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain18.jpg" class="fullpic" id="Pic18">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Puente de San Mart&#237;n, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic19full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain19.jpg" class="fullpic" id="Pic19">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic20full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain20.jpg" class="fullpic" id="Pic20">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic21full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain21.jpg" class="fullpic" id="Pic21">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic22full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain22.jpg" class="fullpic" id="Pic22">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Museo+Nacional+del+Prado/@40.4137818,-3.6943158,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289d66d8a2ed:0x1094f07d93ad885a!8m2!3d40.4137818!4d-3.6921271" target="_blank">
+						<u>Museo Nacional de Prado, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic23full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain23.jpg" class="fullpic" id="Pic23">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Plaza+de+Toros+de+Las+Ventas/@40.4316881,-3.665175,17z/data=!3m1!4b1!4m5!3m4!1s0xd4228b4d09ad237:0xbe57594950eda9c8!8m2!3d40.4316881!4d-3.6629863" target="_blank">
+						<u>Plaza de Toros de Las Ventas, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic24full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain24.jpg" class="fullpic" id="Pic24">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic25full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain25.jpg" class="fullpic" id="Pic25">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic26full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain26.jpg" class="fullpic" id="Pic26">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic27full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain27.jpg" class="fullpic" id="Pic27">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic28full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain28.jpg" class="fullpic" id="Pic28">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Royal+Palace+of+Madrid/@40.417955,-3.7165007,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287e7da4a9c1:0x2e7fec79d6ce4851!8m2!3d40.417955!4d-3.714312" target="_blank">
+							<u>Palacio Real de Madrid, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic29full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain29.jpg" class="fullpic" id="Pic29">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Teatro+Real/@40.418299,-3.7127667,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287bd0788e65:0xa28363ebaaa7adae!8m2!3d40.418299!4d-3.710578" target="_blank">
+						<u>Teatro Real, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic30full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain30.jpg" class="fullpic" id="Pic30">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Tagus River, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic31full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain31.jpg" class="fullpic" id="Pic31">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Calle+del+Cardenal+Cisneros,+28010+Madrid,+Spain/@40.4324505,-3.7044891,17z/data=!3m1!4b1!4m5!3m4!1s0xd42288aaf9a1c3f:0x6e38e48bce6ca91e!8m2!3d40.4324505!4d-3.7023004" target="_blank">
+							<u>Calle de Cardenal Cisneros, Madrid, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic32full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain32.jpg" class="fullpic" id="Pic32">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic33full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain33.jpg" class="fullpic" id="Pic33">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Monasterio+de+San+Juan+de+los+Reyes/@39.8578667,-4.0339317,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b09ab6b8423:0x689825578730a0d0!8m2!3d39.8578667!4d-4.031743" target="_blank">
+						<u>Monasteno de San Juan de los Reyes, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic34full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain34.jpg" class="fullpic" id="Pic34">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Madrid,+Spain/@40.4381311,-3.8196233,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902" target="_blank">
+						<u>Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic35full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(36);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain35.jpg" class="fullpic" id="Pic35">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Puente de San Mart&#237;n, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic36full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(37);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain36.jpg" class="fullpic" id="Pic36">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Plaza+Mayor,+Madrid,+Spain/@40.4153754,-3.7082803,18z/data=!3m1!4b1!4m5!3m4!1s0xd42287ed85fe0d9:0xd202c4f0d67625e8!8m2!3d40.4156181!4d-3.707023" target="_blank">
+						<u>Plaza Mayor, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic37full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(36);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(38);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain37.jpg" class="fullpic" id="Pic37">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic38full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(37);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(39);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain38.jpg" class="fullpic" id="Pic38">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Ayuntamiento+de+Toledo/@39.8607149,-4.0229133,13z/data=!4m5!3m4!1s0xd6a09f3ffffffff:0xa3185c4a4792688c!8m2!3d39.856597!4d-4.024984" target="_blank">
+							<u>Ayuntamiento de Toledo, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic39full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(38);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(40);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain39.jpg" class="fullpic" id="Pic39">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic40full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(39);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+			<div class="nextpicbtn" onclick="picSlide(41);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain40.jpg" class="fullpic" id="Pic40">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Perth+WA,+Italy/@-31.967628,115.7588408,57361m/data=!3m1!1e3!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9505269!4d115.8604572" target="_blank">
+							<u>Iglesia de Santo Tom&#233;, Toledo, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic41full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(40);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(42);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain41.jpg" class="fullpic" id="Pic41">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Puente de San Mart&#237;n, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic42full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(41);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(43);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain42.jpg" class="fullpic" id="Pic42">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Monasterio+de+San+Juan+de+los+Reyes/@39.8578667,-4.0339317,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b09ab6b8423:0x689825578730a0d0!8m2!3d39.8578667!4d-4.031743" target="_blank">
+						<u>Monasteno de San Juan de los Reyes, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic43full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(42);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(44);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain43.jpg" class="fullpic" id="Pic43">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/San+Martin's+Bridge/@39.8566843,-4.036393,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b092ce34d4b:0x2ca2d3c13da2b239!8m2!3d39.8566802!4d-4.0342043" target="_blank">
+						<u>Puente de San Mart&#237;n, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic44full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(43);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(45);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain44.jpg" class="fullpic" id="Pic44">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Catedral+de+la+Almudena/@40.415651,-3.7167407,17z/data=!3m1!4b1!4m5!3m4!1s0xd4228777858f123:0x7fdcec00e606ac72!8m2!3d40.415651!4d-3.714552" target="_blank">
+						<u>Catedral de la Almudena, Madrid, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic45full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(44);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(46);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain45.jpg" class="fullpic" id="Pic45">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic46full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(45);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(47);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain46.jpg" class="fullpic" id="Pic46">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santa+Iglesia+Catedral+Primada+de+Toledo/@39.8571045,-4.0257575,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba663d233eb:0x7d339edda10a36ee!8m2!3d39.8571004!4d-4.0235688" target="_blank">
+						<u>Santa Iglesia Catedral Primada de Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic47full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(46);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(48);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain47.jpg" class="fullpic" id="Pic47">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Mirador+del+Valle/@39.8503657,-4.0240685,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0b752d42008f:0x4775d79c1fbd013a!8m2!3d39.8503616!4d-4.0218798" target="_blank">
+						<u>Mirador del Valle, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic48full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(47);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(49);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain48.jpg" class="fullpic" id="Pic48">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Casa+Yustas/@40.4158511,-3.7089487,17z/data=!3m1!4b1!4m5!3m4!1s0xd42287edd6b2cbd:0xf02d7150a26ec26!8m2!3d40.4158511!4d-3.70676" target="_blank">
+							<u>Casa Yustas, Madrid, Spain</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic49full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(48);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(50);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Spain/Spain49.jpg" class="fullpic" id="Pic49">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Toledo,+Spain/@39.86232,-4.0694706,12z/data=!3m1!4b1!4m5!3m4!1s0xd6a0bad0bb5fdf1:0xc67f5be86a75adfe!8m2!3d39.8628316!4d-4.0273231" target="_blank">
+						<u>Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic50full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(49);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<!--<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>-->
+				<img src="./Images/Spain/Spain50.jpg" class="fullpic" id="Pic50">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Plaza+Cuatro+Calles,+45001+Toledo,+Spain/@39.8583194,-4.0255971,17z/data=!3m1!4b1!4m5!3m4!1s0xd6a0ba5d7bb09eb:0xac67b70c9e7092!8m2!3d39.8583153!4d-4.0234084" target="_blank">
+						<u>Plaza de las Cuatro Calles, Toledo, Spain</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="left2 c2">
+			<img src="./Images/Spain/Spain1.jpg" class="mimg1" onclick="picSlide(1);">
+			<img src="./Images/Spain/Spain3.jpg" class="mimg1" onclick="picSlide(3);">
+			<img src="./Images/Spain/Spain5.jpg" class="mimg1" onclick="picSlide(5);">
+			<img src="./Images/Spain/Spain7.jpg" class="mimg1" onclick="picSlide(7);">
+			<img src="./Images/Spain/Spain9.jpg" class="mimg1" onclick="picSlide(9);">
+			<img src="./Images/Spain/Spain11.jpg" class="mimg1" onclick="picSlide(11);">
+			<img src="./Images/Spain/Spain13.jpg" class="mimg2" onclick="picSlide(13);">
+			<img src="./Images/Spain/Spain15.jpg" class="mimg2" onclick="picSlide(15);">
+			<img src="./Images/Spain/Spain17.jpg" class="mimg2" onclick="picSlide(17);">
+			<img src="./Images/Spain/Spain19.jpg" class="mimg2" onclick="picSlide(19);">
+			<img src="./Images/Spain/Spain21.jpg" class="mimg2" onclick="picSlide(21);">
+			<img src="./Images/Spain/Spain23.jpg" class="mimg2" onclick="picSlide(23);">
+			<img src="./Images/Spain/Spain24.jpg" class="mimg2" onclick="picSlide(24);">
+			<img src="./Images/Spain/Spain25.jpg" class="mimg3" onclick="picSlide(25);">
+			<img src="./Images/Spain/Spain27.jpg" class="mimg3" onclick="picSlide(27);">
+			<img src="./Images/Spain/Spain29.jpg" class="mimg3" onclick="picSlide(29);">
+			<img src="./Images/Spain/Spain31.jpg" class="mimg3" onclick="picSlide(31);">
+			<img src="./Images/Spain/Spain33.jpg" class="mimg3" onclick="picSlide(33);">
+			<img src="./Images/Spain/Spain35.jpg" class="mimg3" onclick="picSlide(35);">
+			<img src="./Images/Spain/Spain37.jpg" class="mimg4" onclick="picSlide(37);">
+			<img src="./Images/Spain/Spain39.jpg" class="mimg4" onclick="picSlide(39);">
+			<img src="./Images/Spain/Spain41.jpg" class="mimg4" onclick="picSlide(41);">
+			<img src="./Images/Spain/Spain43.jpg" class="mimg4" onclick="picSlide(43);">
+			<img src="./Images/Spain/Spain45.jpg" class="mimg4" onclick="picSlide(45);">
+			<img src="./Images/Spain/Spain47.jpg" class="mimg4" onclick="picSlide(47);">
+			<img src="./Images/Spain/Spain48.jpg" class="mimg4" onclick="picSlide(48);">
+			<img src="./Images/Spain/Spain50.jpg" class="mimg4" onclick="picSlide(50);">
+		</div>
+		<div class="right2 c2">
+			<img src="./Images/Spain/Spain2.jpg" class="mimg1" onclick="picSlide(2);">
+			<img src="./Images/Spain/Spain4.jpg" class="mimg1" onclick="picSlide(4);">
+			<img src="./Images/Spain/Spain6.jpg" class="mimg1" onclick="picSlide(6);">
+			<img src="./Images/Spain/Spain8.jpg" class="mimg1" onclick="picSlide(8);">
+			<img src="./Images/Spain/Spain10.jpg" class="mimg1" onclick="picSlide(10);">
+			<img src="./Images/Spain/Spain12.jpg" class="mimg1" onclick="picSlide(12);">
+			<img src="./Images/Spain/Spain14.jpg" class="mimg2" onclick="picSlide(14);">
+			<img src="./Images/Spain/Spain16.jpg" class="mimg2" onclick="picSlide(16);">
+			<img src="./Images/Spain/Spain18.jpg" class="mimg2" onclick="picSlide(18);">
+			<img src="./Images/Spain/Spain20.jpg" class="mimg2" onclick="picSlide(20);">
+			<img src="./Images/Spain/Spain22.jpg" class="mimg2" onclick="picSlide(22);">
+			<img src="./Images/Spain/Spain26.jpg" class="mimg3" onclick="picSlide(26);">
+			<img src="./Images/Spain/Spain28.jpg" class="mimg3" onclick="picSlide(28);">
+			<img src="./Images/Spain/Spain30.jpg" class="mimg3" onclick="picSlide(30);">
+			<img src="./Images/Spain/Spain32.jpg" class="mimg3" onclick="picSlide(32);">
+			<img src="./Images/Spain/Spain34.jpg" class="mimg3" onclick="picSlide(34);">
+			<img src="./Images/Spain/Spain36.jpg" class="mimg3" onclick="picSlide(36);">
+			<img src="./Images/Spain/Spain38.jpg" class="mimg4" onclick="picSlide(38);">
+			<img src="./Images/Spain/Spain40.jpg" class="mimg4" onclick="picSlide(40);">
+			<img src="./Images/Spain/Spain42.jpg" class="mimg4" onclick="picSlide(42);">
+			<img src="./Images/Spain/Spain44.jpg" class="mimg4" onclick="picSlide(44);">
+			<img src="./Images/Spain/Spain46.jpg" class="mimg4" onclick="picSlide(46);">
+			<img src="./Images/Spain/Spain49.jpg" class="mimg4" onclick="picSlide(49);">
+		</div>
+		<button class="loadmore" id="loadmore1" onclick="loadMore(2);">Load More</button>
+		<button class="loadmore" id="loadmore2" onclick="loadMore(3);">Load More</button>
+		<button class="loadmore" id="loadmore3" onclick="loadMore(4);">Load More</button>
+
+		<button class="loadmoremobile" id="loadmoremobile1" onclick="loadMobile(2);">Load More</button>
+		<button class="loadmoremobile" id="loadmoremobile2" onclick="loadMobile(3);">Load More</button>
+		<button class="loadmoremobile" id="loadmoremobile3" onclick="loadMobile(4);">Load More</button>
+
+		<p id="testdevice"></p>
+	</body>
+</html>

@@ -16,6 +16,8 @@ let food;
 let people;
 let places;
 
+let deviceColor;
+
 function startdrop() {
 	document.getElementById("dropdowncontainer").className = 'dropping';
 	document.getElementById("placesdown").style.display = "none";
@@ -69,9 +71,6 @@ function loadMore(next) {
     });
 	document.getElementById('loadmore' + (next-1)).style.display = "none";
 	document.getElementById('loadmore' + next).style.display = "block";
-	if (loads == 2) {
-		document.getElementById('loadmore' + next).style.display = "none";
-	}
 }
 
 function loadMobile(next) {
@@ -82,9 +81,6 @@ function loadMobile(next) {
     });
 	document.getElementById('loadmoremobile' + (next-1)).style.display = "none";
 	document.getElementById('loadmoremobile' + next).style.display = "block";
-	if (loads == 2) {
-		document.getElementById('loadmoremobile' + next).style.display = "none";
-	}
 }
 
 function picShow(num) {
@@ -104,6 +100,33 @@ function picSlide(num) {
     dropup();
 	document.getElementById("shadow").style.display = "block";
 	document.body.style.overflow = "hidden";
+	
+	if (num==13) {
+		deviceColor = window.getComputedStyle(document.getElementById('testdevice')).getPropertyValue("color");
+		if (deviceColor == "rgb(255, 0, 0)") {
+			loadMobile(2)
+		} else if (deviceColor == "rgb(0, 0, 255)") {
+			loadMore(2)
+		}
+	}
+
+	if (num==25) {
+		deviceColor = window.getComputedStyle(document.getElementById('testdevice')).getPropertyValue("color");
+		if (deviceColor == "rgb(255, 0, 0)") {
+			loadMobile(3)
+		} else if (deviceColor == "rgb(0, 0, 255)") {
+			loadMore(3)
+		}
+	}
+
+	if (num==37) {
+		deviceColor = window.getComputedStyle(document.getElementById('testdevice')).getPropertyValue("color");
+		if (deviceColor == "rgb(255, 0, 0)") {
+			loadMobile(3)
+		} else if (deviceColor == "rgb(0, 0, 255)") {
+			loadMore(3)
+		}
+	}
 }
 
 var slideIndex = 0;

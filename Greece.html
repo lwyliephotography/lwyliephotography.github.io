@@ -1,0 +1,1256 @@
+<!--Code Written by Jonathan Wylie--> <!DOCTYPE html>
+<html>
+	<head> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143601127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143601127-1');
+</script>
+
+	<script type="text/javascript" src="./scriptNew.js" async="true"></script>
+		<title>Greece | LW Photography</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./styleNew.css" media="only screen and (min-width:601px)">
+		<link rel="stylesheet" href="./mobileNew.css" media="only screen and (max-width:600px)">
+		<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link rel="icon" href="./LW2.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	</head>
+	<body>
+		<div class="headercontainer">
+			<img src="./Headercamera.jpg" class="headerpic">
+			<div id="mainnav">
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instamobile"><i class="fab fa-instagram"></i></button>
+				</a>
+					<a href="https://lwyliephotography.github.io">
+						<button class="mobilenav" id="homebtn">Home</button>
+					</a>
+					<a href="./Sky">
+						<button class="mobilenav" id="skybtn">Sky</button>
+					</a>
+					<a href="./Nature">
+						<button class="mobilenav" id="naturebtn">Nature</button>
+					</a>
+					<a href="./Stairs">
+						<button class="mobilenav" id="stairsbtn">Stairs</button>
+					</a>
+					<button class="mobilenav" id="placesdownmobile" onclick="placesDropDown();">Places <i class="fas fa-angle-down"></i></button>
+					<button class="mobilenav" id="placesupmobile" onclick="placesDropUp();">Places <i class="fas fa-angle-up"></i></button>
+					<a href="./Food">
+						<button class="mobilenav" id="foodbtn">Food</button>
+					</a>
+					<a href="./People">
+						<button class="mobilenav" id="peoplebtn">People</button>
+					</a>
+					<a href="./Order">
+						<button class="mobilenav" id="homebtn">Order</button>
+					</a>
+					<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+						<button class="earringmobile"><img src="earrings.png" class="earringpng"></button>
+					</a>
+				<div id="mobileplacecontainer">
+					<a href="./Greece">
+						<button class="mobilebtn" id="greecemobile">Greece</button>
+					</a>
+					<a href="./Italy">
+						<button class="mobilebtn" id="italymobile">Italy</button>
+					</a>
+					<a href="./France">
+						<button class="mobilebtn" id="francemobile">France</button>
+					</a>
+					<a href="./UK">
+						<button class="mobilebtn" id="englandmobile">United Kingdom</button>
+					</a>
+					<a href="./Spain">
+						<button class="mobilebtn" id="spainmobile">Spain</button>
+					</a>
+					<a href="./Australia">
+						<button class="mobilebtn" id="australiamobile">Australia</button>
+					</a>
+					<a href="./NewZealand">
+						<button class="mobilebtn" id="zealandmobile">New Zealand</button>
+					</a>
+					<a href="./Caribbean">
+						<button class="mobilebtn" id="caribbeanmobile">Caribbean</button>
+					</a>
+						<a href="./USA">
+						<button class="mobilebtn" id="usamobile">United States</button>
+					</a>
+						<a href="./Canada">
+						<button class="mobilebtn" id="canadamobile">Canada</button>
+					</a>
+					</a>
+				</div>
+				<a href="https://lwyliephotography.github.io">
+					<button class="navbtn">Home</button>
+				</a>
+				<a href="./Sky">
+					<button class="navbtn btnpad">Sky</button>
+				</a>
+				<a href="./Nature">
+					<button class="navbtn btnpad">Nature</button>
+				</a>
+				<a href="./Stairs">
+					<button class="navbtn btnpad">Stairs</button>
+				</a>
+				<a href="./Food">
+					<button class="navbtn btnpad">Food</button>
+				</a>
+				<a href="./People">
+					<button class="navbtn btnpad">People</button>
+				</a>
+				<button class="navbtn btnpad" onclick="startdrop();" id="placesdown">Places <span id="downarrow"><i class="fas fa-angle-down"></i></span></button>
+				<button class="navbtn btnpad" onclick="dropup();" id="placesup"><b>Places</b> <span id="downarrow"><i class="fas fa-angle-up"></i></span></button>
+				<a href="./Order">
+					<button class="navbtn btnpad">Order</button>
+				</a>
+				<a href="https://www.instagram.com/lmwyliephotography/" target="_blank">
+					<button class="instabtn"><i class="fab fa-instagram"></i></button>
+				</a>
+				<a href="https://www.instagram.com/paintingsandpieces/" target="blank_">
+					<button class="earringbtn"><img src="earrings.png" class="earringpng"></button>
+				</a>
+			
+			</div>
+			<div id="dropdowncontainer">
+				<a href="./Greece">
+					<button class="dropbtn" id="greecebtn">Greece</button>
+				</a>
+				<a href="./Italy">
+					<button class="dropbtn" id="italybtn">Italy</button>
+				</a>
+				<a href="./France">
+					<button class="dropbtn" id="francebtn">France</button>
+				</a>
+				<a href="./UK">
+					<button class="dropbtn" id="englandbtn">United Kingdom</button>
+				</a>
+				<a href="./Spain">
+					<button class="dropbtn" id="spainbtn">Spain</button>
+				</a>
+				<a href="./Australia">
+					<button class="dropbtn" id="australiabtn">Australia</button>
+				</a>
+				<a href="./NewZealand">
+					<button class="dropbtn" id="zealandbtn">New Zealand</button>
+				</a>
+				<a href="./Caribbean">
+					<button class="dropbtn" id="caribbeanbtn">Caribbean</button>
+				</a>
+				<a href="./USA">
+					<button class="dropbtn" id="usabtn">United States</button>
+				</a>
+				<a href="./Canada">
+					<button class="dropbtn" id="canadabtn">Canada</button>
+				</a>
+			</div>
+		</div>
+		<div class="locationname">Greece</div>
+		<div id="shadow"></div>
+			<div class="left3 c3">
+				<img src="./Images/Greece/Greece1.jpg" class="img1" onclick="picShow(1);">
+				<img src="./Images/Greece/Greece4.jpg" class="img1" onclick="picShow(4);">
+				<img src="./Images/Greece/Greece7.jpg" class="img1" onclick="picShow(7);">
+				<img src="./Images/Greece/Greece10.jpg" class="img1" onclick="picShow(10);">
+				<img src="./Images/Greece/Greece13.jpg" class="img2" onclick="picShow(13);">
+				<img src="./Images/Greece/Greece16.jpg" class="img2" onclick="picShow(16);">
+				<img src="./Images/Greece/Greece19.jpg" class="img2" onclick="picShow(19);">
+				<img src="./Images/Greece/Greece22.jpg" class="img2" onclick="picShow(22);">
+				<img src="./Images/Greece/Greece25.jpg" class="img3" onclick="picShow(25);">
+				<img src="./Images/Greece/Greece28.jpg" class="img3" onclick="picShow(28);">
+				<img src="./Images/Greece/Greece31.jpg" class="img3" onclick="picShow(31);">
+				<img src="./Images/Greece/Greece34.jpg" class="img3" onclick="picShow(34);">
+				<img src="./Images/Greece/Greece37.jpg" class="img4" onclick="picShow(37);">
+				<img src="./Images/Greece/Greece40.jpg" class="img4" onclick="picShow(40);">
+				<img src="./Images/Greece/Greece43.jpg" class="img4" onclick="picShow(43);">
+				<img src="./Images/Greece/Greece45.jpg" class="img4" onclick="picShow(45);">
+			</div>
+			<div class="mid3 c3">
+				<img src="./Images/Greece/Greece2.jpg" class="img1" onclick="picShow(2);">
+				<img src="./Images/Greece/Greece5.jpg" class="img1" onclick="picShow(5);">
+				<img src="./Images/Greece/Greece8.jpg" class="img1" onclick="picShow(8);">
+				<img src="./Images/Greece/Greece11.jpg" class="img1" onclick="picShow(11);">
+				<img src="./Images/Greece/Greece14.jpg" class="img2" onclick="picShow(14);">
+				<img src="./Images/Greece/Greece17.jpg" class="img2" onclick="picShow(17);">
+				<img src="./Images/Greece/Greece20.jpg" class="img2" onclick="picShow(20);">
+				<img src="./Images/Greece/Greece23.jpg" class="img2" onclick="picShow(23);">
+				<img src="./Images/Greece/Greece26.jpg" class="img3" onclick="picShow(26);">
+				<img src="./Images/Greece/Greece29.jpg" class="img3" onclick="picShow(29);">
+				<img src="./Images/Greece/Greece32.jpg" class="img3" onclick="picShow(32);">
+				<img src="./Images/Greece/Greece35.jpg" class="img3" onclick="picShow(35);">
+				<img src="./Images/Greece/Greece38.jpg" class="img4" onclick="picShow(38);">
+				<img src="./Images/Greece/Greece41.jpg" class="img4" onclick="picShow(41);">
+				<img src="./Images/Greece/Greece44.jpg" class="img4" onclick="picShow(44);">
+			</div>
+			<div class="right3 c3">
+				<img src="./Images/Greece/Greece3.jpg" class="img1" onclick="picShow(3);">
+				<img src="./Images/Greece/Greece6.jpg" class="img1" onclick="picShow(6);">
+				<img src="./Images/Greece/Greece9.jpg" class="img1" onclick="picShow(9);">
+				<img src="./Images/Greece/Greece12.jpg" class="img1" onclick="picShow(12);">
+				<img src="./Images/Greece/Greece15.jpg" class="img2" onclick="picShow(15);">
+				<img src="./Images/Greece/Greece18.jpg" class="img2" onclick="picShow(18);">
+				<img src="./Images/Greece/Greece21.jpg" class="img2" onclick="picShow(21);">
+				<img src="./Images/Greece/Greece24.jpg" class="img2" onclick="picShow(24);">
+				<img src="./Images/Greece/Greece27.jpg" class="img3" onclick="picShow(27);">
+				<img src="./Images/Greece/Greece30.jpg" class="img3" onclick="picShow(30);">
+				<img src="./Images/Greece/Greece33.jpg" class="img3" onclick="picShow(33);">
+				<img src="./Images/Greece/Greece36.jpg" class="img3" onclick="picShow(36);">
+				<img src="./Images/Greece/Greece39.jpg" class="img4" onclick="picShow(39);">
+				<img src="./Images/Greece/Greece42.jpg" class="img4" onclick="picShow(42);">
+			</div>
+		
+		<div id="Pic1full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece1.jpg" class="fullpic" id="Pic1">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic2full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(1);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece2.jpg" class="fullpic" id="Pic2">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Kala+Nera+370+10,+Greece/@39.3034769,23.115459,15z/data=!3m1!4b1!4m5!3m4!1s0x14a713c4f058eac1:0x3a09ddb26352b65b!8m2!3d39.3064901!4d23.1190815" target="_blank">
+						<u>Kala Nera, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic3full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull();">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(2);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece3.jpg" class="fullpic" id="Pic3">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Athens,+Greece/@37.9909517,23.6682987,12z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd1f067043f1:0x2736354576668ddd!8m2!3d37.9838096!4d23.7275388" target="_blank">
+						<u>Athens, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic4full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(3);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece4.jpg" class="fullpic" id="Pic4">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic5full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(4);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece5.jpg" class="fullpic" id="Pic5">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic6full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(5);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece6.jpg" class="fullpic" id="Pic6">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic7full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(6);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece7.jpg" class="fullpic" id="Pic7">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic8full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(7);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece8.jpg" class="fullpic" id="Pic8">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic9full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(8);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece9.jpg" class="fullpic" id="Pic9">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic10full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(9);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece10.jpg" class="fullpic" id="Pic10">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic11full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(10);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece11.jpg" class="fullpic" id="Pic11">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic12full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(11);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece12.jpg" class="fullpic" id="Pic12">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Perissa+Black+Sand+Beach/@36.3537225,25.4714866,17z/data=!3m1!4b1!4m5!3m4!1s0x1499d02a38840c3f:0xd4ff67e7815dd67e!8m2!3d36.3537182!4d25.4736753" target="_blank">
+						<u>Perissa Black Sand Beach (&Pi;&alpha;&rho;&alpha;&lambda;&#943;&alpha; &Pi;&epsilon;&rho;&#943;&sigma;&sigma;&alpha;), Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic13full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(12);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece13.jpg" class="fullpic" id="Pic13">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Mylopotamos+Beach/@39.3754118,23.2007275,17z/data=!3m1!4b1!4m5!3m4!1s0x14a7055297e14423:0x64dabf5a3f922084!8m2!3d39.3754077!4d23.2029162" target="_blank">
+						<u>Mylopotamos Beach, Mouresi, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic14full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(13);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece14.jpg" class="fullpic" id="Pic14">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic15full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(14);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece15.jpg" class="fullpic" id="Pic15">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Monument+Of+The+Unknown+Soldier/@37.9753462,23.7341668,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd3edda00197:0xc496fdfe023ef242!8m2!3d37.975342!4d23.7363555" target="_blank">
+						<u>Monument of the Unknown Soldier (&Mu;&nu;&eta;&mu;&epsilon;&#943;&omicron; &Tau;&omicron;&upsilon; &Alpha;&gamma;&nu;&#974;&sigma;&tau;&omicron;&upsilon; &Sigma;&tau;&rho;&alpha;&tau;&iota;&#943;&tau;&eta;), Athens, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic16full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(15);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece16.jpg" class="fullpic" id="Pic16">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic17full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(16);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece17.jpg" class="fullpic" id="Pic17">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic18full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(17);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece18.jpg" class="fullpic" id="Pic18">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Amoudi+Bay/@36.4605959,25.3683094,17z/data=!4m8!1m2!2m1!1sammoudi+bay,+oia!3m4!1s0x1499cb83960067e5:0x8a1dfb0bbf1990f2!8m2!3d36.4605976!4d25.3707898" target="_blank">
+						<u>Amoudi Bay, Oia, Santorini Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic19full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(18);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece19.jpg" class="fullpic" id="Pic19">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic20full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(19);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece20.jpg" class="fullpic" id="Pic20">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Parthenon/@37.9715327,23.7245279,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd19ca39ee61:0x1b3fa079b878a218!8m2!3d37.9715285!4d23.7267166" target="_blank">
+						<u>Parthenon (&Pi;&alpha;&rho;&theta;&epsilon;&nu;&#974;&nu;&alpha;&sigmaf;), The Acropolis, Athens, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic21full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(20);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece21.jpg" class="fullpic" id="Pic21">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic22full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(21);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece22.jpg" class="fullpic" id="Pic22">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic23full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(22);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece23.jpg" class="fullpic" id="Pic23">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Amoudi+Bay/@36.4605959,25.3683094,17z/data=!4m8!1m2!2m1!1sammoudi+bay,+oia!3m4!1s0x1499cb83960067e5:0x8a1dfb0bbf1990f2!8m2!3d36.4605976!4d25.3707898" target="_blank">
+						<u>Amoudi Bay, Oia, Santorini Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic24full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(23);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece24.jpg" class="fullpic" id="Pic24">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic25full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(24);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece25.jpg" class="fullpic" id="Pic25">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic26full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(25);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece26.jpg" class="fullpic" id="Pic26">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Red+Beach/@36.3485833,25.3924556,17z/data=!3m1!4b1!4m5!3m4!1s0x1499cf44c11adedf:0x94c47c1dd8b6fc20!8m2!3d36.348579!4d25.3946443" target="_blank">
+						<u>Red Beach (&Kappa;&#972;&kappa;&kappa;&iota;&nu;&eta; &Pi;&alpha;&rho;&alpha;&lambda;&#943;&alpha;), Thera, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic27full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(26);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece27.jpg" class="fullpic" id="Pic27">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic28full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(27);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece28.jpg" class="fullpic" id="Pic28">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Makrinitsa+370+11,+Greece/@39.3998875,22.9777888,15z/data=!3m1!4b1!4m5!3m4!1s0x14a76d437ed7d58f:0x334533ebfd6b023!8m2!3d39.4017375!4d22.9877729" target="_blank">
+							<u>Makrinitsa, Greece</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic29full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(28);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece29.jpg" class="fullpic" id="Pic29">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic30full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(29);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece30.jpg" class="fullpic" id="Pic30">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Epidaurus+Theatre/@37.596082,23.0770548,17z/data=!3m1!4b1!4m5!3m4!1s0x149f8bc5e7b2f867:0x47ba752e3e5ec40b!8m2!3d37.5960778!4d23.0792435" target="_blank">
+						<u>Epidaurus Theatre (&Mu;&epsilon;&gamma;&#940;&lambda;&omicron; &Alpha;&rho;&chi;&alpha;&#943;&omicron; &Theta;&#941;&alpha;&tau;&rho;&omicron; &Epsilon;&pi;&iota;&delta;&alpha;&#973;&rho;&omicron;&upsilon;), Athens, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic31full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(30);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece31.jpg" class="fullpic" id="Pic31">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Kapari+Taverna/@36.4208345,25.4296885,17z/data=!3m1!4b1!4m5!3m4!1s0x1499cdce09fd8aff:0x7aab61f33e5ad517!8m2!3d36.4208302!4d25.4318772" target="_blank">
+							<u>Thera, Santorini, Greece</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic32full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(31);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece32.jpg" class="fullpic" id="Pic32">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Santorini+Donkey/@36.4188643,25.4284483,17z/data=!3m1!4b1!4m5!3m4!1s0x1499cdd23ed2926f:0xf3b4f4e22919a1df!8m2!3d36.41886!4d25.430637" target="_blank">
+							<u>Santorini Donkey (&Gamma;&alpha;&#970;&delta;&omicron;&upsilon;&rho;&#940;&kappa;&iota;&alpha; &Sigma;&alpha;&nu;&tau;&omicron;&rho;&#943;&nu;&eta;&sigmaf;), Thera, Santorini, Greece</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic33full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(32);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece33.jpg" class="fullpic" id="Pic33">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Perissa+Black+Sand+Beach/@36.3537225,25.4714866,17z/data=!3m1!4b1!4m5!3m4!1s0x1499d02a38840c3f:0xd4ff67e7815dd67e!8m2!3d36.3537182!4d25.4736753" target="_blank">
+						<u>Perissa Black Sand Beach (&Pi;&alpha;&rho;&alpha;&lambda;&#943;&alpha; &Pi;&epsilon;&rho;&#943;&sigma;&sigma;&alpha;), Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic34full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(33);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece34.jpg" class="fullpic" id="Pic34">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Makrinitsa+370+11,+Greece/@39.3998875,22.9777888,15z/data=!3m1!4b1!4m5!3m4!1s0x14a76d437ed7d58f:0x334533ebfd6b023!8m2!3d39.4017375!4d22.9877729" target="_blank">
+						<u>Makrinitsa, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic35full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(34);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(36);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece35.jpg" class="fullpic" id="Pic35">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic36full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(35);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(37);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece36.jpg" class="fullpic" id="Pic36">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Perivolas+Hotel/@36.4612373,25.3859823,17z/data=!3m1!4b1!4m8!3m7!1s0x1499cc87c7a8ae95:0x181d495cb349f098!5m2!4m1!1i2!8m2!3d36.461233!4d25.388171" target="_blank">
+						<u>Thera, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic37full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(36);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(38);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece37.jpg" class="fullpic" id="Pic37">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic38full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(37);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(39);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece38.jpg" class="fullpic" id="Pic38">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Lotza/@36.4613601,25.3721785,17z/data=!3m1!4b1!4m5!3m4!1s0x1499cb81a1649c0b:0xb4425918ebf9b6ff!8m2!3d36.4613558!4d25.3743672" target="_blank">
+							<u>Oia, Santorini, Greece</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic39full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(38);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(40);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece39.jpg" class="fullpic" id="Pic39">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Volos,+Greece/@39.3652666,22.9123006,13z/data=!3m1!4b1!4m5!3m4!1s0x14a76c60e1af6cf1:0x5d6e8e390219aae2!8m2!3d39.366584!4d22.9506769" target="_blank">
+							<u>Volos, Greece</u>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic40full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(39);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+			<div class="nextpicbtn" onclick="picSlide(41);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece40.jpg" class="fullpic" id="Pic40">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+						<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic41full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(40);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(42);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece41.jpg" class="fullpic" id="Pic41">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Parthenon/@37.9715327,23.7245279,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd19ca39ee61:0x1b3fa079b878a218!8m2!3d37.9715285!4d23.7267166" target="_blank">
+						<u>Parthenon (&Pi;&alpha;&rho;&theta;&epsilon;&nu;&#974;&nu;&alpha;&sigmaf;), The Acropolis, Athens, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic42full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(41);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(43);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece42.jpg" class="fullpic" id="Pic42">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Perivolas+Hotel/@36.4612373,25.3859823,17z/data=!3m1!4b1!4m8!3m7!1s0x1499cc87c7a8ae95:0x181d495cb349f098!5m2!4m1!1i2!8m2!3d36.461233!4d25.388171" target="_blank">
+						<u>Thera, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic43full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(42);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(44);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece43.jpg" class="fullpic" id="Pic43">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Saint+George/@36.4207132,25.3621295,12z/data=!4m8!1m2!2m1!1ssaint+george+church!3m4!1s0x1499cc80a5fedea5:0xed76dbb95cd07916!8m2!3d36.4618539!4d25.3835604" target="_blank">
+						<u>Saint George (&#902;&gamma;&iota;&omicron;&sigmaf; &Gamma;&epsilon;&#974;&rho;&gamma;&iota;&omicron;&sigmaf;) Church, Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic44full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(43);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="nextpicbtn" onclick="picSlide(45);">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+				<img src="./Images/Greece/Greece44.jpg" class="fullpic" id="Pic44">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Oia+847+02,+Greece/@36.4624369,25.3724056,15z/data=!3m1!4b1!4m5!3m4!1s0x1499cb8b1c44c1a9:0x400bd2ce2b9c750!8m2!3d36.4618199!4d25.3753101" target="_blank">
+						<u>Oia, Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="Pic45full" class="full">
+			<div class="fullpicarea">
+				<div class="exitfullbtn" onclick="exitfull()">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="lastpicbtn" onclick="picSlide(44);">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<!--<div class="nextpicbtn" onclick="picSlide();">
+					<i class="fas fa-arrow-right"></i>
+				</div>-->
+				<img src="./Images/Greece/Greece45.jpg" class="fullpic" id="Pic45">
+			</div>
+			<div class="picdesc">
+				<div class="location">
+					<i class="fas fa-map-pin"></i>&emsp;
+					<a href="https://www.google.com/maps/place/Santorini/@36.4072716,25.3505901,12z/data=!3m1!4b1!4m5!3m4!1s0x1499ce86adfd9ff7:0xb2a761f740d68afc!8m2!3d36.3931562!4d25.4615092" target="_blank">
+						<u>Santorini, Greece</u>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div class="left2 c2">
+				<img src="./Images/Greece/Greece1.jpg" class="mimg1" onclick="picSlide(1);">
+				<img src="./Images/Greece/Greece3.jpg" class="mimg1" onclick="picSlide(3);">
+				<img src="./Images/Greece/Greece5.jpg" class="mimg1" onclick="picSlide(5);">
+				<img src="./Images/Greece/Greece7.jpg" class="mimg1" onclick="picSlide(7);">
+				<img src="./Images/Greece/Greece9.jpg" class="mimg1" onclick="picSlide(9);">
+				<img src="./Images/Greece/Greece13.jpg" class="mimg2" onclick="picSlide(13);">
+				<img src="./Images/Greece/Greece15.jpg" class="mimg2" onclick="picSlide(15);">
+				<img src="./Images/Greece/Greece17.jpg" class="mimg2" onclick="picSlide(17);">
+				<img src="./Images/Greece/Greece19.jpg" class="mimg2" onclick="picSlide(19);">
+				<img src="./Images/Greece/Greece21.jpg" class="mimg2" onclick="picSlide(21);">
+				<img src="./Images/Greece/Greece23.jpg" class="mimg2" onclick="picSlide(23);">
+				<img src="./Images/Greece/Greece25.jpg" class="mimg3" onclick="picSlide(25);">
+				<img src="./Images/Greece/Greece27.jpg" class="mimg3" onclick="picSlide(27);">
+				<img src="./Images/Greece/Greece29.jpg" class="mimg3" onclick="picSlide(29);">
+				<img src="./Images/Greece/Greece31.jpg" class="mimg3" onclick="picSlide(31);">
+				<img src="./Images/Greece/Greece33.jpg" class="mimg3" onclick="picSlide(33);">
+				<img src="./Images/Greece/Greece37.jpg" class="mimg4" onclick="picSlide(37);">
+				<img src="./Images/Greece/Greece39.jpg" class="mimg4" onclick="picSlide(39);">
+				<img src="./Images/Greece/Greece41.jpg" class="mimg4" onclick="picSlide(41);">
+				<img src="./Images/Greece/Greece43.jpg" class="mimg4" onclick="picSlide(43);">
+				<img src="./Images/Greece/Greece45.jpg" class="mimg4" onclick="picSlide(45);">
+			</div>
+			<div class="right2 c2">
+				<img src="./Images/Greece/Greece2.jpg" class="mimg1" onclick="picSlide(2);">
+				<img src="./Images/Greece/Greece4.jpg" class="mimg1" onclick="picSlide(4);">
+				<img src="./Images/Greece/Greece6.jpg" class="mimg1" onclick="picSlide(6);">
+				<img src="./Images/Greece/Greece8.jpg" class="mimg1" onclick="picSlide(8);">
+				<img src="./Images/Greece/Greece10.jpg" class="mimg1" onclick="picSlide(10);">
+				<img src="./Images/Greece/Greece11.jpg" class="mimg1" onclick="picSlide(11);">
+				<img src="./Images/Greece/Greece12.jpg" class="mimg1" onclick="picSlide(12);">
+				<img src="./Images/Greece/Greece14.jpg" class="mimg2" onclick="picSlide(14);">
+				<img src="./Images/Greece/Greece16.jpg" class="mimg2" onclick="picSlide(16);">
+				<img src="./Images/Greece/Greece18.jpg" class="mimg2" onclick="picSlide(18);">
+				<img src="./Images/Greece/Greece20.jpg" class="mimg2" onclick="picSlide(20);">
+				<img src="./Images/Greece/Greece22.jpg" class="mimg2" onclick="picSlide(22);">
+				<img src="./Images/Greece/Greece24.jpg" class="mimg2" onclick="picSlide(24);">
+				<img src="./Images/Greece/Greece26.jpg" class="mimg3" onclick="picSlide(26);">
+				<img src="./Images/Greece/Greece28.jpg" class="mimg3" onclick="picSlide(28);">
+				<img src="./Images/Greece/Greece30.jpg" class="mimg3" onclick="picSlide(30);">
+				<img src="./Images/Greece/Greece32.jpg" class="mimg3" onclick="picSlide(32);">
+				<img src="./Images/Greece/Greece34.jpg" class="mimg3" onclick="picSlide(34);">
+				<img src="./Images/Greece/Greece35.jpg" class="mimg3" onclick="picSlide(35);">
+				<img src="./Images/Greece/Greece36.jpg" class="mimg3" onclick="picSlide(36);">
+				<img src="./Images/Greece/Greece38.jpg" class="mimg4" onclick="picSlide(38);">
+				<img src="./Images/Greece/Greece40.jpg" class="mimg4" onclick="picSlide(40);">
+				<img src="./Images/Greece/Greece42.jpg" class="mimg4" onclick="picSlide(42);">
+				<img src="./Images/Greece/Greece44.jpg" class="mimg4" onclick="picSlide(44);">
+			</div>
+		
+			<button class="loadmore" id="loadmore1" onclick="loadMore(2);">Load More</button>
+			<button class="loadmore" id="loadmore2" onclick="loadMore(3);">Load More</button>
+			<button class="loadmore" id="loadmore3" onclick="loadMore(4);">Load More</button>
+
+			<button class="loadmoremobile" id="loadmoremobile1" onclick="loadMobile(2);">Load More</button>
+			<button class="loadmoremobile" id="loadmoremobile2" onclick="loadMobile(3);">Load More</button>
+			<button class="loadmoremobile" id="loadmoremobile3" onclick="loadMobile(4);">Load More</button>
+
+			<p id="testdevice"></p>
+	</body>
+</html>

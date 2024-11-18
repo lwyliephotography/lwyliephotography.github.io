@@ -1,9 +1,20 @@
 body {
 	margin: 0;
 	font-family: Alike;
+	overflow-x: hidden;
 }
 
 a {
+	color: black;
+	text-decoration: none;
+}
+
+#testdevice {
+	color: blue;
+	display: none;
+}
+
+a:visited {
 	color: black;
 	text-decoration: none;
 }
@@ -12,7 +23,7 @@ button {
 	border: 0;
 }
 
-#hamburgerdown, #hamburgerup, .mobiletitle, .left2, .right2, .left4, .lmid4, .rmid4, .right4, .instamobile, .tumblrmobile, .mobilebtn, .mobilenav, .selectedmobile {
+#hamburgerdown, #hamburgerup, .mobiletitle, .left2, .right2, .left4, .lmid4, .rmid4, .right4, .instamobile, .earringmobile, .mobilebtn, .mobilenav, .selectedmobile {
 	display: none;
 	visibility: hidden;
 	height: 0;
@@ -37,12 +48,12 @@ button {
 
 #mainnav {
 	background-color: #83ded5;
-	width: 100%;
+	width: 87vw;
 	height: 4.5vw;
 	position: relative;
 	bottom: 5px;
 	margin: 0;
-	padding: 0;
+	padding: 0 3vw 0 10vw;
 	text-align: center;
 	box-shadow: 0 5px 8px -4px grey;
 	display: block;
@@ -162,33 +173,27 @@ button {
 	background-color: #71d1c7;
 }
 
-.instabtn {
-	height: 2.8vw;
-	width: 2.8vw;
+.instabtn, .earringbtn {
+	height: 3vw;
+	width: 3vw;
 	border-radius: 50%;
 	background-color: #83ded5;
 	color: black;
+	float: right;
 	font-size: 2vw;
-	position: absolute;
-	margin-top: 1%;
-	left: 90%;
+	margin: .8% 1vw 0 0;
+	text-align: center;
 }
 
-.tumblrbtn {
-	height: 2.8vw;
-	width: 2.8vw;
-	border-radius: 50%;
-	background-color: #83ded5;
-	color: black;
-	font-size: 2vw;
-	position: absolute;
-	margin-top: 1%;
-	left: 95%;
-}
-
-.instabtn:hover, .tumblrbtn:hover {
+.instabtn:hover, .earringbtn:hover {
 	cursor: pointer;
 	background-color: #67bfb6;
+}
+
+.earringpng {
+	margin-top: .3vw;
+	width: 90%;
+	filter: brightness(0);
 }
 
 .left3 {
@@ -223,7 +228,7 @@ button {
 
 .img1, .img2, .img3, .img4 {
 	width: 100%;
-	margin: 2.5% 0 0 0;
+	margin: 0 0 1.3vw 0;
 }
 
 .img1:hover, .img2:hover, .img3:hover, .img4:hover {
@@ -396,7 +401,13 @@ button {
   left: 20%;
   top: 85vw;
   padding: 0;
-  margin-bottom: 50px;
+}
+
+.ssbodymargin {
+	height: 30px;
+	width: 100%;
+	position: absolute;
+	top: 130vw;
 }
 
 @-webkit-keyframes fade {
